@@ -1,13 +1,26 @@
 <template>
   <div id="goodList">
     <ul class="goods">
-      <p>商品图片，商品名字，商品价格，商品销量，商家信誉</p>
       <li v-for="good, index in goods" class="good">
-        <span  
-          @click=""
-        >
-        <p><img :src="good.image">,  {{ good.name }},  {{ good.price }},  {{ good.sale_volume }},{{good.g_score}}</p>
-        </span>
+        <span>
+          <li class = "good_inf">
+            <div class = "good_image">
+              <img :src="good.image">
+            </div>
+            <div class = "good_name">
+              {{ good.name }}
+            </div>
+           </li>
+           <li class = "good_price">
+              <p class="price">￥{{good.price}}</p>
+           </li>
+           <li class = "good_s_volume">
+             <p class = "volume">{{ good.sale_volume }}</p>
+           </li>
+           <li class = "good_score">
+             <p class = "score">{{ good.g_score }}</p>
+           </li>
+          </span>
       </li>
     </ul>
   </div>
@@ -37,7 +50,6 @@ export default {
 <style scoped>
 #goodList {
   margin: 0 auto;
-  max-width: 500px;
 }
 
 .goods li {
@@ -45,7 +57,70 @@ export default {
 }
 
 .good {
-  text-align: left;
-  cursor: pointer;
+  width: 100%;
+  height: 130px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.good li{
+  float: left;
+  height: 100%;
+}
+.good .good_inf{
+    width: 342px;
+}
+.good .good_inf .good_image{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    float: left;
+}
+
+.good .good_inf .good_image img{
+  width: 100%;
+  vertical-align: top;
+}
+
+.good .good_inf .good_name{
+  margin: 20px 0 0 10px;
+  line-height: 18px;
+  width: 200px;
+  float: left;
+}
+
+.good .good_price{
+  width: 130px;
+}
+
+.good .good_price price{
+  margin-top: 20px;
+  line-height: 18px;
+  font-family: Verdana,Tahoma,arial;
+  color: #3c3c3c;
+  font-weight: bold;
+}
+
+.good .good_s_volume{
+  width: 120px;
+
+}
+.good .good_s_volume volume{
+  line-height: 18px;
+  margin-top: 20px;
+  font-family: Verdana,Tahoma,arial;
+  color: #900;
+  font-weight: bold;
+}
+
+.good .good_score{
+  width: 120px;
+}
+
+.good .good_score .score{
+  line-height: 18px;
+  margin-top: 20px;
+  font-family: Verdana,Tahoma,arial;
+  color: #900;
+  font-weight: bold;
 }
 </style>
