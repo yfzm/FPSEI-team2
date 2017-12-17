@@ -1,6 +1,7 @@
 <template>
     <div id="app">
         <img src="./assets/logo.png">
+        <Button type="primary">Primary</Button>
         <HelloWorld></HelloWorld>
     </div>
 </template>
