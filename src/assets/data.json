@@ -4,7 +4,7 @@
             "id": 10000,
             "name": "Algorithms",
             "price": 31.60,
-            "sales_volumn": 50,
+            "sales_volume": 50,
             "author": "Sanjoy",
             "seller": 1,
             "url": "http://item.jd.com/10079570.html",
@@ -25,8 +25,8 @@
             },
             "comments": [
                 {
-                    "User": "Jay",
-                    "Comment": "Very good!!!"
+                    "user": "Jay",
+                    "comment": "Very good!!!"
                 },
                 {
                     "User": "LIUok",
@@ -38,7 +38,7 @@
             "id": 10001,
             "name": "Algorithms1",
             "price": 31.60,
-            "sales_volumn": 50,
+            "sales_volume": 50,
             "author": "Sanjoy",
             "seller": 1,
             "url": "http://item.jd.com/10079570.html",
@@ -59,12 +59,12 @@
             },
             "comments": [
                 {
-                    "User": "Jay",
-                    "Comment": "Very good!!!"
+                    "user": "Jay",
+                    "comment": "Very good!!!"
                 },
                 {
-                    "User": "LIUok",
-                    "Comment": "cheap and good use."
+                    "user": "LIUok",
+                    "comment": "cheap and good use."
                 }
             ]
         },
@@ -72,7 +72,7 @@
             "id": 10002,
             "name": "Algorithms2",
             "price": 31.60,
-            "sales_volumn": 50,
+            "sales_volume": 50,
             "author": "Sanjoy",
             "seller": 1,
             "url": "http://item.jd.com/10079570.html",
@@ -97,8 +97,8 @@
                     "Comment": "Very good!!!"
                 },
                 {
-                    "User": "LIUok",
-                    "Comment": "cheap and good use."
+                    "user": "LIUok",
+                    "comment": "cheap and good use."
                 }
             ]
         },
@@ -106,7 +106,7 @@
             "id": 10003,
             "name": "Algorithms3",
             "price": 31.60,
-            "sales_volumn": 50,
+            "sales_volume": 50,
             "author": "Sanjoy",
             "seller": 1,
             "url": "http://item.jd.com/10079570.html",
@@ -127,12 +127,12 @@
             },
             "comments": [
                 {
-                    "User": "Jay",
-                    "Comment": "Very good!!!"
+                    "user": "Jay",
+                    "comment": "Very good!!!"
                 },
                 {
-                    "User": "LIUok",
-                    "Comment": "cheap and good use."
+                    "user": "LIUok",
+                    "comment": "cheap and good use."
                 }
             ]
         },
@@ -140,7 +140,7 @@
             "id": 10004,
             "name": "Algorithms4",
             "price": 31.60,
-            "sales_volumn": 50,
+            "sales_volume": 50,
             "author": "Sanjoy",
             "seller": 1,
             "url": "http://item.jd.com/10079570.html",
@@ -161,12 +161,12 @@
             },
             "comments": [
                 {
-                    "User": "Jay",
-                    "Comment": "Very good!!!"
+                    "user": "Jay",
+                    "comment": "Very good!!!"
                 },
                 {
-                    "User": "LIUok",
-                    "Comment": "cheap and good use."
+                    "user": "LIUok",
+                    "comment": "cheap and good use."
                 }
             ]
         }
