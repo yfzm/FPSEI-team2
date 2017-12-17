@@ -24,7 +24,7 @@
                 <Row>
                     <Col span="18">
                         <div class="book-btn">
-                            <Button type="primary" size="large" icon="ios-cart" long>立即购买</Button>
+                            <Button type="primary" size="large" icon="ios-cart" @click="openUrl" long>立即购买</Button>
                         </div>
                     </Col>
                 </Row>
@@ -104,6 +104,11 @@
             return {
                 good_score: this.itemDetail.scores.good,
                 credit_score: this.itemDetail.scores.credit
+            }
+        },
+        methods: {
+            openUrl: function () {
+                window.open(this.itemDetail.url);
             }
         }
     }

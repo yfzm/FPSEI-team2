@@ -13,7 +13,6 @@
                 <Col span="14" offset="1">
                     <Description id="description" v-bind:item-detail="detail_info"
                                  v-bind:items-comment="comment_info"></Description>
-                    <!--<CommentList id="comment_list" v-bind:item-comment="comment_info"></CommentList>-->
                 </Col>
             </Row>
 
@@ -26,7 +25,6 @@
     import Search from './components/Search.vue';
     import GoodList from './components/GoodList.vue';
     import Description from './components/description.vue';
-    import CommentList from './components/comment_list.vue';
 
     export default {
         name: 'app',
@@ -81,8 +79,7 @@
         components: {
             Search,
             GoodList,
-            Description,
-            CommentList
+            Description
         }
     }
 </script>
