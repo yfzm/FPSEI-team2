@@ -12,8 +12,8 @@
                 </Col>
                 <Col span="14" offset="1">
                     <Description id="description" v-bind:item-detail="detail_info"
-                                                  v-bind:item-comment="comment_info"></Description>
-                    <CommentList id="comment_list"></CommentList>
+                                 v-bind:items-comment="comment_info"></Description>
+                    <!--<CommentList id="comment_list" v-bind:item-comment="comment_info"></CommentList>-->
                 </Col>
             </Row>
 
@@ -37,11 +37,11 @@
                     "id": 10000,
                     "name": "Algorithms",
                     "price": 31.60,
-                    "sales_volumn": 50,
+                    "sales_volume": 50,
                     "author": "Sanjoy",
                     "seller": 1,
                     "url": "http://item.jd.com/10079570.html",
-                    "picture": "http://img10.360buyimg.com/n5/jfs/t3910/74/286809770/130084/6c02e960/584778f9N4cb292f8.jpg",
+                    "picture": "http://img10.360buyimg.com/n1/jfs/t3910/74/286809770/130084/6c02e960/584778f9N4cb292f8.jpg",
                     "detail": {
                         "publisher": "清华大学出版社",
                         "pub_date": "2008-07-01",
@@ -55,26 +55,16 @@
                     "scores": {
                         "credit": 4.5,
                         "good": 4.7
-                    },
-                    "comments": [
-                        {
-                            "User": "Jay",
-                            "Comment": "Very good!!!"
-                        },
-                        {
-                            "User": "LIUok",
-                            "Comment": "cheap and good use."
-                        }
-                    ]
+                    }
                 },
                 comment_info: [
                     {
-                        "User": "Jay",
-                        "Comment": "Very good!!!"
+                        "user": "Jay",
+                        "comment": "Very good!!!"
                     },
                     {
-                        "User": "LIUok",
-                        "Comment": "cheap and good use."
+                        "user": "LIUok",
+                        "comment": "cheap and good use."
                     }
                 ],
             }
@@ -116,7 +106,7 @@
 
     .top-pin {
         text-align: center;
-        padding-top: 25px;
+        /*padding-top: 25px;*/
     }
 
     #good_list {

@@ -1,13 +1,13 @@
 <template>
     <div>
-        <p>{{ single_com_item.userName }}</p>
-        <p>{{ single_com_item.comment }}</p>
+        <p>{{ itemComment[0].user }}</p>
+        <p>{{ itemComment[0].comment }}</p>
     </div>
 </template>
 
 <script>
     export default {
-        props: ['single_com_item'],
+        props: ['itemComment'],
     }
 </script>
 
