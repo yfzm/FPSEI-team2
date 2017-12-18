@@ -83,7 +83,7 @@
                 </TabPane>
 
                 <TabPane label="用户评价" name="comment">
-                    <div class="comment-list" v-for="item in itemsComment">
+                    <div class="comment-list" v-for="item in itemDetail.comments">
                         <Card>
                             <p slot="title">{{ item.user }}</p>
                             <p>{{ item.comment }}</p>
@@ -99,7 +99,7 @@
 
 <script>
     export default {
-        props: ['itemDetail', 'itemsComment'],
+        props: ['itemDetail'],
         data: function () {
             return {
                 good_score: this.itemDetail.scores.good,

@@ -11,8 +11,7 @@
                                              v-on:sendItem="getItem"></GoodList>
                 </Col>
                 <Col span="14" offset="1">
-                    <Description id="description" v-bind:item-detail="detail_info"
-                                 v-bind:items-comment="comment_info"></Description>
+                    <Description id="description" v-bind:item-detail="book_info"></Description>
                 </Col>
             </Row>
 
@@ -31,7 +30,7 @@
         data: function() {
             return {
                 search_result: [10000, 10001, 10002, 10003, 10004],
-                detail_info: {
+                book_info: {
                     "id": 10000,
                     "name": "Algorithms",
                     "price": 31.60,
@@ -39,7 +38,7 @@
                     "author": "Sanjoy",
                     "seller": 1,
                     "url": "http://item.jd.com/10079570.html",
-                    "picture": "http://img10.360buyimg.com/n1/jfs/t3910/74/286809770/130084/6c02e960/584778f9N4cb292f8.jpg",
+                    "picture": "http://img10.360buyimg.com/n5/jfs/t3910/74/286809770/130084/6c02e960/584778f9N4cb292f8.jpg",
                     "detail": {
                         "publisher": "清华大学出版社",
                         "pub_date": "2008-07-01",
@@ -53,18 +52,18 @@
                     "scores": {
                         "credit": 4.5,
                         "good": 4.7
-                    }
-                },
-                comment_info: [
-                    {
-                        "user": "Jay",
-                        "comment": "Very good!!!"
                     },
-                    {
-                        "user": "LIUok",
-                        "comment": "cheap and good use."
-                    }
-                ],
+                    "comments": [
+                        {
+                            "user": "Jay",
+                            "comment": "Very good!!!"
+                        },
+                        {
+                            "user": "LIUok",
+                            "comment": "cheap and good use."
+                        }
+                    ]
+                }
             }
         },
         methods: {
