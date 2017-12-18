@@ -70,9 +70,8 @@
             getResult: function (m_search_result) {
                 this.search_result = m_search_result;
             },
-            getItem: function (m_detail, m_comment) {
-                this.detail_info = m_detail;
-                this.comment_info = m_comment;
+            getItem: function (m_detail) {
+                this.book_info = m_detail;
             }
         },
         components: {
