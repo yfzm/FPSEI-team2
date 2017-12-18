@@ -3,11 +3,11 @@
     <ul class="goods">
       <li v-for="good, index in goods" class="good">
         <span
-        @click = "send_Item(good)"
+        @click = "send_Item()"
         >
           <li class = "good_inf">
             <div class = "good_image">
-              <img :src="good.image">
+              <img :src="good.picture">
             </div>
             <div class = "good_name">
               {{ good.name }}
@@ -17,10 +17,10 @@
               <p class="price">￥{{good.price}}</p>
            </li>
            <li class = "good_s_volume">
-             <p class = "volume">{{ good.sale_volume }}</p>
+             <p class = "volume">{{ good.sales_volume }}</p>
            </li>
            <li class = "good_score">
-             <p class = "score">{{ good.g_score }}</p>
+             <p class = "score">{{ good.scores.good }}</p>
            </li>
           </span>
       </li>
@@ -28,19 +28,19 @@
   </div>
 </template>
 <script>
-import book from '/assets/data.json'
+import book from '../assets/data.json'
 
 export default {
   name: 'GoodList',
   props: ['searchArr'],
+  mounted(){
+    this.sort_arr();
+  },
   data: () => ({
     bb: book,
     // use array to save goods, here i use some examples to show the web
     goods: []
   }),
-  mounted(){
-    this.sort_arr(searchArr);
-  },
   watch:{
     searchArr: function(new_Arr) {
       this.sort_arr(new_Arr);
@@ -50,16 +50,16 @@ export default {
     send_Item: function(good) {
       this.$emit ('sendItem', good);
     },
-    sort_arr: function(searchArr){
-      this.goods.splice(searchArr.length);
+    sort_arr: function(){
+      this.goods.splice(this.searchArr.length);
       var i = 0;
       var j = 0;
       var save_arr = [];
-      while (i < searchArr.length){
+      while (i < this.searchArr.length){
         j = 0;
-        while (j < bb.Books.length){
-          if (searchArr[i].id === bb.Books[j].id){
-            save_arr.push(bb.Books[j]);
+        while (j < this.bb.Books.length){
+          if (this.searchArr[i] === this.bb.Books[j].id){
+            save_arr.push(this.bb.Books[j]);
             break;
           }
           j ++;
@@ -73,7 +73,7 @@ export default {
             save_arr[j] = save_arr[i];
             save_arr[i] = temp;
           }
-          else if(save_arr[j].price === save_arr[i].price]){
+          else if(save_arr[j].price === save_arr[i].price){
             if (save_arr[j].sale_volume > save_arr[i].sale_volume){
               var temp = save_arr[i];
               save_arr[i] = save_arr[j];
@@ -113,7 +113,7 @@ export default {
   height: 100%;
 }
 .good .good_inf{
-    width: 342px;
+    width: 242px;
 }
 .good .good_inf .good_image{
     width: 80px;
@@ -130,12 +130,12 @@ export default {
 .good .good_inf .good_name{
   margin: 20px 0 0 10px;
   line-height: 18px;
-  width: 200px;
+  width: 100px;
   float: left;
 }
 
 .good .good_price{
-  width: 130px;
+  width: 65px;
 }
 
 .good .good_price price{
@@ -147,7 +147,7 @@ export default {
 }
 
 .good .good_s_volume{
-  width: 120px;
+  width: 60px;
 
 }
 .good .good_s_volume volume{
@@ -159,7 +159,7 @@ export default {
 }
 
 .good .good_score{
-  width: 120px;
+  width: 60px;
 }
 
 .good .good_score .score{
