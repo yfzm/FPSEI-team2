@@ -1,105 +1,169 @@
-
 <template>
+    <div>
+        <Row>
+            <Col span="10">
+                <img v-bind:src="itemDetail.picture" v-bind:alt="itemDetail.name" width="300" height="300">
+            </Col>
+            <Col span="13" offset="1">
+                <p class="book-name">{{ itemDetail.name }}</p>
+                <p class="book-author">{{ itemDetail.author }} 著</p>
+                <p class="book-price book-tag">价格：<span>{{ itemDetail.price }}</span></p>
+                <p class="book-tag">月销量：<span>{{ itemDetail.sales_volume }}</span></p>
+                <p class="book-tag">来源：<span>{{ itemDetail.seller }}</span></p>
+                <p class="book-tag">商品评分：
+                    <Rate disabled show-text allow-half v-model="good_score">
+                    <span style="color: #f5a623; font-size: 17px">{{ good_score }}</span>
+                    </Rate>
+                </p>
+                <p class="book-tag">店铺评分：
+                    <Rate disabled show-text allow-half v-model="credit_score">
+                    <span style="color: #f5a623; font-size: 17px">{{ credit_score }}</span>
+                    </Rate>
+                </p>
 
-    <ul td align="left">
-      <h2>desctiptions</h2>
-      <img v-bind:src="description.picture" v-bind:alt="description.bookname"/>
+                <Row>
+                    <Col span="18">
+                        <div class="book-btn">
+                            <Button type="primary" size="large" icon="ios-cart" @click="openUrl" long>立即购买</Button>
+                        </div>
+                    </Col>
+                </Row>
 
-      <!--
-      <li v-for="(value, key) in description">
-      <h3>{{ key }}</h3>
-      <div class="content">{{ value }}</div>
-      </li>
-      -->
 
-          <ul class="disc-card">
+            </Col>
+        </Row>
 
-          <div class="main-card">
-          <div class="card">
-            <h3>Book name</h3>
-            <div class="content">{{ description.bookname }}</div>
-          </div>
-          <div class="card">
-            <h3>Price</h3>
-            <div class="content">{{ description.price }}</div>
-          </div>
-          <div class="card">
-            <h3>Writer</h3>
-            <div class="content">{{ description.writer }}</div>
-          </div>
-          <div class="card">
-            <h3>Seller</h3>
-            <div class="content"><a v-bind:href="description.address">{{ description.seller }}</a></div>
-          </div>
+        <div class="book-tab">
+            <Tabs value="detail">
+                <TabPane label="详细信息" name="detail">
+                    <Row class="set-padding-top20">
+                        <Col span="5">
+                            <p>出版社</p>
+                        </Col>
+                        <Col span="5">
+                            <p>{{ itemDetail.detail.publisher }}</p>
+                        </Col>
+                        <Col span="5" offset="4">
+                            <p>出版日期</p>
+                        </Col>
+                        <Col span="5">
+                            <p>{{ itemDetail.detail.pub_date }}</p>
+                        </Col>
+                    </Row>
+
+                    <Row class="set-padding-top20">
+                        <Col span="5">
+                            <p>页数</p>
+                        </Col>
+                        <Col span="5">
+                            <p>{{ itemDetail.detail.pages }}</p>
+                        </Col>
+                        <Col span="5" offset="4">
+                            <p>语言</p>
+                        </Col>
+                        <Col span="5">
+                            <p>{{ itemDetail.detail.language }}</p>
+                        </Col>
+                    </Row>
+
+                    <div class="book-description">
+                        <Card>
+                            <p slot="title">简介</p>
+                            <p>{{ itemDetail.information.introduction }}</p>
+                        </Card>
+                    </div>
+
+                    <div class="book-content">
+                        <Collapse>
+                            <Panel name="1">目录
+                                <p slot="content">{{ itemDetail.information.content }}</p>
+                            </Panel>
+                        </Collapse>
+                    </div>
+                </TabPane>
+
+                <TabPane label="用户评价" name="comment">
+                    <div class="comment-list" v-for="item in itemDetail.comments">
+                        <Card>
+                            <p slot="title">{{ item.user }}</p>
+                            <p>{{ item.comment }}</p>
+                        </Card>
+                    </div>
+                </TabPane>
+            </Tabs>
         </div>
-          <div class="detail-card">
-            <h3>Details</h3>
-            <li v-for="(value, key) in description.detail">
-              <h4>{{ key }}</h4>
-              <div class="content">{{ value }}</div>
-            </li>
-          </div>
 
-        </ul>
-    </ul>
+
+    </div>
 </template>
 
 <script>
-
-
-
-export default {
-  data () {
-    return {
-      description: {
-        "bookname": "Algorithms",
-        "price": 31.60,
-        "sale_volume": 50,
-        "writer": "Sanjoy",
-        "seller": "fasfasf-XXXXX",
-        "address": "http://item.jd.com/10079570.html",
-        "picture": "http://img10.360buyimg.com/n5/jfs/t3910/74/286809770/130084/6c02e960/584778f9N4cb292f8.jpg",
-        "detail": {
-          "Publisher": "�廪��ѧ������",
-          "Pub_date": "2008-07-01",
-          "Pages": "345",
-          "Language": "Chinese"
+    export default {
+        props: ['itemDetail'],
+        data: function () {
+            return {
+                good_score: this.itemDetail.scores.good,
+                credit_score: this.itemDetail.scores.credit
+            }
         },
-        "information": {
-          "Introduction": "��Ϊһ�������㷨������˼�����鼮�����鲻����������Ϣѧ�ƴ�ѧ���������̲ģ����ο��飩�����ǽ��κξ��г�����ѧ�������������㷨Ӧ�����о����õ�һ����·ʯ������ѭ�򽥽�������ǳ����չʾ���㷨�о���Ӧ�������У���ģ�ͷ������㷨���쵽�����Է������㷨�Ż��ķ������档�漰���ݴӹ��ϵ������㷨�������㷨�������㷨�����Թ滮����̬�滮�������㷨�Լ�NP�������ۣ���������δ��ȫ����ȫò�����Ӽ��㣬�����˾��䡢�ִ���δ���㷨��չ���ڶ������Գɹ���",
-          "index": "��0��\n��һ��\n�ڶ���\n"
-        },
-        "scores": {
-          "credit": 4.5,
-          "good": 4.7
-        },
-      },
-
+        methods: {
+            openUrl: function () {
+                window.open(this.itemDetail.url);
+            }
+        }
     }
-  }
-}
-
-
 
 
 </script>
 
 <style>
-img {
-max-width: 25%;
-max-height: 25%;
-}
 
+    .book-name {
+        font: bold 30px "arial";
+        color: #3c3c3c
+    }
 
-.main-card{
-  float:left;
-}
-.detail-card{
-float:right;
-margin-right: 400px;
-}
+    .book-author {
+        font: 15px "arial";
+        color: #3399ff;
+        padding-top: 10px;
+    }
+
+    .book-price {
+        padding-top: 20px !important;
+    }
+
+    .book-tag {
+        padding-top: 8px;
+        font-size: 15px
+    }
+
+    .book-btn {
+        padding-top: 20px;
+    }
+
+    .book-tab {
+        padding-top: 30px;
+        padding-bottom: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .set-padding-top20 {
+        padding-top: 20px;
+    }
+
+    .book-description {
+        padding-top: 30px;
+    }
+
+    .book-content {
+        padding-top: 10px;
+    }
+
+    .comment-list {
+        padding-top: 15px;
+    }
+
 </style>
 
-<custom1>
-  例えばコンポーネントのドキュメントを書くことが出来ます
-</custom1>
