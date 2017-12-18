@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="description">
         <Row>
             <Col span="10">
                 <img v-bind:src="itemDetail.picture" v-bind:alt="itemDetail.name" width="300" height="300">
@@ -7,22 +7,53 @@
             <Col span="13" offset="1">
                 <p class="book-name">{{ itemDetail.name }}</p>
                 <p class="book-author">{{ itemDetail.author }} 著</p>
-                <p class="book-price book-tag">价格：<span>{{ itemDetail.price }}</span></p>
-                <p class="book-tag">月销量：<span>{{ itemDetail.sales_volume }}</span></p>
-                <p class="book-tag">来源：<span>{{ itemDetail.seller }}</span></p>
-                <p class="book-tag">商品评分：
+
+                <p class="book-price">
+                    <Row>
+                        <Col span="5">
+                            <p style="font-size: 15px">价格</p>
+                        </Col>
+                        <Col span="19">
+                            <p class="price-digit">￥{{ itemDetail.price.toFixed(2) }}</p>
+                        </Col>
+                    </Row>
+                </p>
+
+                <p class="book-tag">
+                    <Row>
+                        <Col span="5">
+                            <p style="font-size: 15px">月销量</p>
+                        </Col>
+                        <Col span="19">
+                            <p class="price-volume">{{ itemDetail.sales_volume }}</p>
+                        </Col>
+                    </Row>
+                </p>
+
+                <p class="book-tag">
+                    <Row>
+                        <Col span="5">
+                            <p style="font-size: 15px">来源</p>
+                        </Col>
+                        <Col span="19">
+                            <p class="price-seller">{{ good_source[itemDetail.seller] }}</p>
+                        </Col>
+                    </Row>
+                </p>
+
+                <p class="book-rate">商品评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Rate disabled show-text allow-half v-model="good_score">
                     <span style="color: #f5a623; font-size: 17px">{{ good_score }}</span>
                     </Rate>
                 </p>
-                <p class="book-tag">店铺评分：
+                <p class="book-credit">店铺评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Rate disabled show-text allow-half v-model="credit_score">
                     <span style="color: #f5a623; font-size: 17px">{{ credit_score }}</span>
                     </Rate>
                 </p>
 
                 <Row>
-                    <Col span="18">
+                    <Col span="15">
                         <div class="book-btn">
                             <Button type="primary" size="large" icon="ios-cart" @click="openUrl" long>立即购买</Button>
                         </div>
@@ -103,7 +134,8 @@
         data: function () {
             return {
                 good_score: this.itemDetail.scores.good,
-                credit_score: this.itemDetail.scores.credit
+                credit_score: this.itemDetail.scores.credit,
+                good_source: ["淘宝", "京东", "天猫", "亚马逊"]
             }
         },
         methods: {
@@ -117,6 +149,12 @@
 </script>
 
 <style>
+
+    /*#description {*/
+        /*height: 600px;*/
+        /*overflow-x: hidden;*/
+        /*overflow-y: hidden;*/
+    /*}*/
 
     .book-name {
         font: bold 30px "arial";
@@ -133,13 +171,29 @@
         padding-top: 20px !important;
     }
 
+    .price-digit {
+        font: bold 20px "verdana";
+        color: orangered;
+        letter-spacing: 1px;
+    }
+
     .book-tag {
         padding-top: 8px;
         font-size: 15px
     }
 
+    .book-rate {
+        padding-top: 7px;
+        font-size: 15px;
+    }
+
+    .book-credit {
+        padding-top: 2px;
+        font-size: 15px;
+    }
+
     .book-btn {
-        padding-top: 20px;
+        padding-top: 17px;
     }
 
     .book-tab {
