@@ -20,7 +20,7 @@
       </Row>
       <li v-for="good, index in goods" class="good">
         <span
-        @click = "send_Item()"
+        @click = "send_Item(good)"
         >
           <li class = "good_inf">
             <div class = "good_image">
@@ -54,7 +54,6 @@ export default {
     this.sort_arr();
   },
   data: () => ({
-    message : "商品图片        商品名称     商品价格     商品销量     商品评分",
     bb: book,
     // use array to save goods, here i use some examples to show the web
     goods: []
