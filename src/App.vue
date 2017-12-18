@@ -10,6 +10,7 @@
                     <GoodList id="good_list" v-bind:search-arr="search_result"
                                              v-on:sendItem="getItem"></GoodList>
                 </Col>
+
                 <Col span="14" offset="1">
                     <Description id="description" v-bind:item-detail="book_info"></Description>
                 </Col>
@@ -70,9 +71,8 @@
             getResult: function (m_search_result) {
                 this.search_result = m_search_result;
             },
-            getItem: function (m_detail, m_comment) {
-                this.detail_info = m_detail;
-                this.comment_info = m_comment;
+            getItem: function (m_detail) {
+                this.book_info = m_detail;
             }
         },
         components: {
