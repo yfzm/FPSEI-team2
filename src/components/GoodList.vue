@@ -1,6 +1,23 @@
 <template>
   <div id="goodList">
     <ul class="goods">
+      <Row>
+        <Col span = 4>
+        <p>商品图片</p>
+        </Col>
+        <Col span = 5>
+        <p>商品名称</p>
+        </Col>
+        <Col span = 3>
+        <p>商品价格</p>
+        </Col>
+        <Col span = 3>
+        <p>商品销量</p>
+        </Col>
+        <Col span = 3>
+        <p>商品评分</p>
+        </Col>
+      </Row>
       <li v-for="good, index in goods" class="good">
         <span
         @click = "send_Item()"
@@ -37,6 +54,7 @@ export default {
     this.sort_arr();
   },
   data: () => ({
+    message : "商品图片        商品名称     商品价格     商品销量     商品评分",
     bb: book,
     // use array to save goods, here i use some examples to show the web
     goods: []
@@ -113,7 +131,7 @@ export default {
   height: 100%;
 }
 .good .good_inf{
-    width: 242px;
+    width: 190px;
 }
 .good .good_inf .good_image{
     width: 80px;
