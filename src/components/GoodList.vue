@@ -2,7 +2,9 @@
   <div id="goodList">
     <ul class="goods">
       <li v-for="good, index in goods" class="good">
-        <span>
+        <span
+        @click = "send_Item(good)"
+        >
           <li class = "good_inf">
             <div class = "good_image">
               <img :src="good.image">
@@ -26,25 +28,69 @@
   </div>
 </template>
 <script>
+import book from '/assets/data.json'
+
 export default {
   name: 'GoodList',
-  
+  props: ['searchArr'],
   data: () => ({
+    bb: book,
     // use array to save goods, here i use some examples to show the web
-    goods: [{
-      image: 'http://img10.360buyimg.com/n5/jfs/t3910/74/286809770/130084/6c02e960/584778f9N4cb292f8.jpg',
-      name: 'Algorithms',
-      price: 31.60,
-      sale_volume: 50,
-      g_score: 4.7
-    },{
-      image: 'https://img13.360buyimg.com/n5/jfs/t4531/220/483445858/300979/584172a2/58d0cf49N6c0daead.jpg',
-      name:'CSAPP',
-      price: 184.00,
-      sale_volume: 79,
-      g_score: 3.7
-    }]
-  })
+    goods: []
+  }),
+  mounted(){
+    this.sort_arr(searchArr);
+  },
+  watch:{
+    searchArr: function(new_Arr) {
+      this.sort_arr(new_Arr);
+    }
+  },
+  methods: {
+    send_Item: function(good) {
+      this.$emit ('sendItem', good);
+    },
+    sort_arr: function(searchArr){
+      this.goods.splice(searchArr.length);
+      var i = 0;
+      var j = 0;
+      var save_arr = [];
+      while (i < searchArr.length){
+        j = 0;
+        while (j < bb.Books.length){
+          if (searchArr[i].id === bb.Books[j].id){
+            save_arr.push(bb.Books[j]);
+            break;
+          }
+          j ++;
+        }
+        i ++;
+      }
+      for (i = 0; i < save_arr.length-1; i ++){
+        for(j = i + 1; j < save_arr.length; j ++){
+          if (save_arr[j].price < save_arr[i].price){
+            var temp = save_arr[j];
+            save_arr[j] = save_arr[i];
+            save_arr[i] = temp;
+          }
+          else if(save_arr[j].price === save_arr[i].price]){
+            if (save_arr[j].sale_volume > save_arr[i].sale_volume){
+              var temp = save_arr[i];
+              save_arr[i] = save_arr[j];
+              save_arr[j] = temp; 
+            }
+          }
+        }
+      }
+      var k = 0;
+      while (k < save_arr.length){
+        this.goods.splice(k, 1 ,save_arr[k]);
+        k ++;
+      }
+      this.$emit ('sendItem', this.goods[0]);
+      return true;
+    }
+  } 
 }
 </script>
 <style scoped>
