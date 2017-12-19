@@ -19,14 +19,15 @@ export default {
   },
   methods: {
      showNextpage: function(){
-       this.search_result=[];
        this.input_result=this.my_input;
-       for(let data of this.right_book.Books){
-         if(data.name.indexOf(this.input_result) >= 0){
-           this.search_result.push(data.id);
+       let i=0;
+       for(let data in this.right_book.Books){
+         if(this.right_book.Books[i].name===this.input_result){
+           this.search_result.push(this.right_book.Books[i].id);
          }
+         i++;
        }
-       this.$emit("sendResult",this.search_result);
+       this.$emit("sendBookId",this.search_result);
      }
   }
 }
@@ -35,11 +36,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 #input_type{
+  position:absolute;
+  top:10px;
+  left:250px;
   width: 400px;
   height: 30px;
   font-size:20px;
 }
 #button_type{
+  position:absolute;
+  top:10px;
+  left:654px;
   width: 70px;
   height:35px;
   font-size:20px;
