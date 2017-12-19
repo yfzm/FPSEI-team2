@@ -1,22 +1,25 @@
 <template>
     <div id="app">
-        <Affix class="top-pin">
+        <div class="top-pin">
             <Search id="search_box" v-on:sendResult="getResult"></Search>
-        </Affix>
-
-        <div class="page_body">
-            <Row>
-                <Col span="9">
-                    <GoodList id="good_list" v-bind:search-arr="search_result"
-                                             v-on:sendItem="getItem"></GoodList>
-                </Col>
-
-                <Col span="14" offset="1">
-                    <Description id="description" v-bind:item-detail="book_info"></Description>
-                </Col>
-            </Row>
-
         </div>
+
+        <div class="page-padding">
+            <div class="page_body">
+                <Row>
+                    <Col span="8">
+                        <GoodList id="good_list" v-bind:search-arr="search_result"
+                        v-on:sendItem="getItem"></GoodList>
+                    </Col>
+
+                    <Col span="15" offset="1">
+                        <Description id="description" v-bind:item-detail="book_info"></Description>
+                    </Col>
+                </Row>
+
+            </div>
+        </div>
+
 
     </div>
 </template>
@@ -86,19 +89,25 @@
 
 <style>
     #app {
-        /*width: 100%;*/
+        background: #eeeeee;
+    }
+
+    .page-padding {
+        padding-top: 30px;
+
     }
 
     .page_body {
         margin: 0 auto;
         max-width: 1300px;
-        padding-top: 120px;
-
+        min-width: 1100px;
+        background-color: #ffffff
     }
 
     #search_box {
-        width: 800px;
+        width: 100%;
         margin: 0 auto;
+        background-color: #ffffff
     }
 
     .top-pin {
