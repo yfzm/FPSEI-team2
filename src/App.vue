@@ -89,7 +89,7 @@
 
 <style>
     #app {
-        background: #eeeeee;
+        background: #ececec;
     }
 
     .page-padding {
@@ -99,8 +99,10 @@
 
     .page_body {
         margin: 0 auto;
-        max-width: 1300px;
+        max-width: 1400px;
         min-width: 1100px;
+        border-radius: 15px;
+        padding: 30px;
         background-color: #ffffff
     }
 
