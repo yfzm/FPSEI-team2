@@ -94,15 +94,15 @@
 
     .page-padding {
         padding-top: 30px;
-
+        padding-bottom: 30px;
     }
 
     .page_body {
         margin: 0 auto;
         max-width: 1400px;
         min-width: 1100px;
-        border-radius: 15px;
-        padding: 30px;
+        border-radius: 10px;
+        padding: 40px 30px 30px 30px;
         background-color: #ffffff
     }
 
@@ -118,7 +118,7 @@
     }
 
     #good_list {
-
+        /*border-right: 1px solid #000000;*/
     }
 
     #description {
