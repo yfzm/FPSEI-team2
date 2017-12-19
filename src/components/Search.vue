@@ -21,12 +21,10 @@ export default {
      showNextpage: function(){
        this.search_result=[];
        this.input_result=this.my_input;
-       let i=0;
-       for(let data in this.right_book.Books){
-         if(this.right_book.Books[i].name===this.input_result){
-           this.search_result.push(this.right_book.Books[i].id);
+       for(let data of this.right_book.Books){
+         if(data.name.indexOf(this.input_result) >= 0){
+           this.search_result.push(data.id);
          }
-         i++;
        }
        this.$emit("sendResult",this.search_result);
      }
