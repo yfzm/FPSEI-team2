@@ -42,13 +42,13 @@
                 </p>
 
                 <p class="book-rate">商品评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Rate disabled show-text allow-half v-model="good_score">
-                    <span style="color: #f5a623; font-size: 17px">{{ good_score }}</span>
+                    <Rate disabled show-text allow-half v-model="itemDetail.scores.good">
+                    <span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.good }}</span>
                     </Rate>
                 </p>
                 <p class="book-credit">店铺评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Rate disabled show-text allow-half v-model="credit_score">
-                    <span style="color: #f5a623; font-size: 17px">{{ credit_score }}</span>
+                    <Rate disabled show-text allow-half v-model="itemDetail.scores.credit">
+                    <span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.credit }}</span>
                     </Rate>
                 </p>
 
