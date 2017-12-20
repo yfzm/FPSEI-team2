@@ -1,47 +1,53 @@
 <template>
   <div id="goodList">
-    <ul class="goods">
+    <div class="goods">
       <Row>
-        <Col span = 4>
+        <Col span = 6>
         <p>商品图片</p>
         </Col>
-        <Col span = 5>
+        <Col span = 6>
         <p>商品名称</p>
         </Col>
-        <Col span = 3>
+        <Col span = 4>
         <p>商品价格</p>
         </Col>
-        <Col span = 3>
+        <Col span = 4>
         <p>商品销量</p>
         </Col>
-        <Col span = 3>
+        <Col span = 4>
         <p>商品评分</p>
         </Col>
       </Row>
-      <li v-for="good, index in goods" class="good">
-        <span
-        @click = "send_Item(good)"
-        >
-          <li class = "good_inf">
-            <div class = "good_image">
-              <img :src="good.picture">
-            </div>
-            <div class = "good_name">
-              {{ good.name }}
-            </div>
-           </li>
-           <li class = "good_price">
-              <p class="price">￥{{good.price}}</p>
-           </li>
-           <li class = "good_s_volume">
-             <p class = "volume">{{ good.sales_volume }}</p>
-           </li>
-           <li class = "good_score">
-             <p class = "score">{{ good.scores.good }}</p>
-           </li>
-          </span>
-      </li>
-    </ul>
+      <div v-for="good, index in goods" class="good">
+        <div class="item-padding">
+          <div class="good-item" @click = "send_Item(good)">
+            <Card>
+              <Row>
+                <Col span = 6>
+                <img :src="good.picture" height="70px" width="70px">
+                </Col>
+                <Col span = 6>
+                <p class = "good_name">
+                  {{ good.name }}
+                </p>
+                </Col>
+                <Col span = 4>
+                <p class="price">￥{{good.price.toFixed(2)}}</p>
+                </Col>
+                <Col span = 4>
+                <p class = "volume">{{ good.sales_volume }}</p>
+                </Col>
+                <Col span = 4>
+                <p class = "score">{{ good.scores.good }}</p>
+                </Col>
+              </Row>
+            </Card>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -94,7 +100,7 @@ export default {
             if (save_arr[j].sale_volume > save_arr[i].sale_volume){
               var temp = save_arr[i];
               save_arr[i] = save_arr[j];
-              save_arr[j] = temp; 
+              save_arr[j] = temp;
             }
           }
         }
@@ -107,83 +113,92 @@ export default {
       this.$emit ('sendItem', this.goods[0]);
       return true;
     }
-  } 
+  }
 }
 </script>
-<style scoped>
-#goodList {
-  margin: 0 auto;
-}
+<style>
 
-.goods li {
-  list-style: none;
-}
+  .item-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-.good {
-  width: 100%;
-  height: 130px;
-  border-bottom: 1px solid #e7e7e7;
-}
+  .good-item {
+    cursor: pointer;
+  }
+/*#goodList {*/
+  /*margin: 0 auto;*/
+/*}*/
 
-.good li{
-  float: left;
-  height: 100%;
-}
-.good .good_inf{
-    width: 190px;
-}
-.good .good_inf .good_image{
-    width: 80px;
-    height: 80px;
-    margin-top: 20px;
-    float: left;
-}
+/*.goods li {*/
+  /*list-style: none;*/
+/*}*/
 
-.good .good_inf .good_image img{
-  width: 100%;
-  vertical-align: top;
-}
+/*.good {*/
+  /*width: 100%;*/
+  /*height: 130px;*/
+  /*border-bottom: 1px solid #e7e7e7;*/
+/*}*/
 
-.good .good_inf .good_name{
-  margin: 20px 0 0 10px;
-  line-height: 18px;
-  width: 100px;
-  float: left;
-}
+/*.good li{*/
+  /*float: left;*/
+  /*height: 100%;*/
+/*}*/
+/*.good .good_inf{*/
+    /*width: 190px;*/
+/*}*/
+/*.good .good_inf .good_image{*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+    /*margin-top: 20px;*/
+    /*float: left;*/
+/*}*/
 
-.good .good_price{
-  width: 65px;
-}
+/*.good .good_inf .good_image img{*/
+  /*width: 100%;*/
+  /*vertical-align: top;*/
+/*}*/
 
-.good .good_price price{
-  margin-top: 20px;
-  line-height: 18px;
-  font-family: Verdana,Tahoma,arial;
-  color: #3c3c3c;
-  font-weight: bold;
-}
+/*.good .good_inf .good_name{*/
+  /*margin: 20px 0 0 10px;*/
+  /*line-height: 18px;*/
+  /*width: 100px;*/
+  /*float: left;*/
+/*}*/
 
-.good .good_s_volume{
-  width: 60px;
+/*.good .good_price{*/
+  /*width: 65px;*/
+/*}*/
 
-}
-.good .good_s_volume volume{
-  line-height: 18px;
-  margin-top: 20px;
-  font-family: Verdana,Tahoma,arial;
-  color: #900;
-  font-weight: bold;
-}
+/*.good .good_price price{*/
+  /*margin-top: 20px;*/
+  /*line-height: 18px;*/
+  /*font-family: Verdana,Tahoma,arial;*/
+  /*color: #3c3c3c;*/
+  /*font-weight: bold;*/
+/*}*/
 
-.good .good_score{
-  width: 60px;
-}
+/*.good .good_s_volume{*/
+  /*width: 60px;*/
 
-.good .good_score .score{
-  line-height: 18px;
-  margin-top: 20px;
-  font-family: Verdana,Tahoma,arial;
-  color: #900;
-  font-weight: bold;
-}
+/*}*/
+/*.good .good_s_volume volume{*/
+  /*line-height: 18px;*/
+  /*margin-top: 20px;*/
+  /*font-family: Verdana,Tahoma,arial;*/
+  /*color: #900;*/
+  /*font-weight: bold;*/
+/*}*/
+
+/*.good .good_score{*/
+  /*width: 60px;*/
+/*}*/
+
+/*.good .good_score .score{*/
+  /*line-height: 18px;*/
+  /*margin-top: 20px;*/
+  /*font-family: Verdana,Tahoma,arial;*/
+  /*color: #900;*/
+  /*font-weight: bold;*/
+/*}*/
 </style>
