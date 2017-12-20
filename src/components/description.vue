@@ -197,10 +197,7 @@
     }
 
     .book-tab {
-        padding-top: 30px;
-        padding-bottom: 70px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 30px 20px 20px 20px;
     }
 
     .set-padding-top20 {
