@@ -1,133 +1,137 @@
 <template>
     <div id="description">
-        <Row>
-            <Col span="10">
-                <img v-bind:src="itemDetail.picture" v-bind:alt="itemDetail.name" width="300" height="300">
-            </Col>
-            <Col span="13" offset="1">
-                <p class="book-name">{{ itemDetail.name }}</p>
-                <p class="book-author">{{ itemDetail.author }} 著</p>
+        <div v-if="!this.noBook" class="whole-page">
+			<Row>
+				<Col span="10">
+					<img v-bind:src="itemDetail.picture" v-bind:alt="itemDetail.name" width="300" height="300">
+				</Col>
+				<Col span="13" offset="1">
+					<p class="book-name">{{ itemDetail.name }}</p>
+					<p class="book-author">{{ itemDetail.author }} 著</p>
 
-                <p class="book-price">
-                    <Row>
-                        <Col span="5">
-                            <p style="font-size: 15px">价格</p>
-                        </Col>
-                        <Col span="19">
-                            <p class="price-digit">￥{{ itemDetail.price.toFixed(2) }}</p>
-                        </Col>
-                    </Row>
-                </p>
+					<p class="book-price">
+						<Row>
+							<Col span="5">
+								<p style="font-size: 15px">价格</p>
+							</Col>
+							<Col span="19">
+								<p class="price-digit">￥{{ itemDetail.price.toFixed(2) }}</p>
+							</Col>
+						</Row>
+					</p>
 
-                <p class="book-tag">
-                    <Row>
-                        <Col span="5">
-                            <p style="font-size: 15px">月销量</p>
-                        </Col>
-                        <Col span="19">
-                            <p class="price-volume">{{ itemDetail.sales_volume }}</p>
-                        </Col>
-                    </Row>
-                </p>
+					<p class="book-tag">
+						<Row>
+							<Col span="5">
+								<p style="font-size: 15px">月销量</p>
+							</Col>
+							<Col span="19">
+								<p class="price-volume">{{ itemDetail.sales_volume }}</p>
+							</Col>
+						</Row>
+					</p>
 
-                <p class="book-tag">
-                    <Row>
-                        <Col span="5">
-                            <p style="font-size: 15px">来源</p>
-                        </Col>
-                        <Col span="19">
-                            <p class="price-seller">{{ good_source[itemDetail.seller] }}</p>
-                        </Col>
-                    </Row>
-                </p>
+					<p class="book-tag">
+						<Row>
+							<Col span="5">
+								<p style="font-size: 15px">来源</p>
+							</Col>
+							<Col span="19">
+								<p class="price-seller">{{ good_source[itemDetail.seller] }}</p>
+							</Col>
+						</Row>
+					</p>
 
-                <p class="book-rate">商品评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Rate disabled show-text allow-half v-model="itemDetail.scores.good">
-                    <span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.good }}</span>
-                    </Rate>
-                </p>
-                <p class="book-credit">店铺评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Rate disabled show-text allow-half v-model="itemDetail.scores.credit">
-                    <span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.credit }}</span>
-                    </Rate>
-                </p>
+					<p class="book-rate">商品评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<Rate disabled show-text allow-half v-model="itemDetail.scores.good">
+						<span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.good }}</span>
+						</Rate>
+					</p>
+					<p class="book-credit">店铺评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<Rate disabled show-text allow-half v-model="itemDetail.scores.credit">
+						<span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.credit }}</span>
+						</Rate>
+					</p>
 
-                <Row>
-                    <Col span="15">
-                        <div class="book-btn">
-                            <Button type="primary" size="large" icon="ios-cart" @click="openUrl" long>立即购买</Button>
-                        </div>
-                    </Col>
-                </Row>
+					<Row>
+						<Col span="15">
+							<div class="book-btn">
+								<Button type="primary" size="large" icon="ios-cart" @click="openUrl" long>立即购买</Button>
+							</div>
+						</Col>
+					</Row>
 
 
-            </Col>
-        </Row>
+				</Col>
+			</Row>
 
-        <div class="book-tab">
-            <Tabs value="detail">
-                <TabPane label="详细信息" name="detail">
-                    <Row class="set-padding-top20">
-                        <Col span="5">
-                            <p>出版社</p>
-                        </Col>
-                        <Col span="5">
-                            <p>{{ itemDetail.detail.publisher }}</p>
-                        </Col>
-                        <Col span="5" offset="4">
-                            <p>出版日期</p>
-                        </Col>
-                        <Col span="5">
-                            <p>{{ itemDetail.detail.pub_date }}</p>
-                        </Col>
-                    </Row>
+			<div class="book-tab">
+				<Tabs value="detail">
+					<TabPane label="详细信息" name="detail">
+						<Row class="set-padding-top20">
+							<Col span="5">
+								<p>出版社</p>
+							</Col>
+							<Col span="5">
+								<p>{{ itemDetail.detail.publisher }}</p>
+							</Col>
+							<Col span="5" offset="4">
+								<p>出版日期</p>
+							</Col>
+							<Col span="5">
+								<p>{{ itemDetail.detail.pub_date }}</p>
+							</Col>
+						</Row>
 
-                    <Row class="set-padding-top20">
-                        <Col span="5">
-                            <p>页数</p>
-                        </Col>
-                        <Col span="5">
-                            <p>{{ itemDetail.detail.pages }}</p>
-                        </Col>
-                        <Col span="5" offset="4">
-                            <p>语言</p>
-                        </Col>
-                        <Col span="5">
-                            <p>{{ itemDetail.detail.language }}</p>
-                        </Col>
-                    </Row>
+						<Row class="set-padding-top20">
+							<Col span="5">
+								<p>页数</p>
+							</Col>
+							<Col span="5">
+								<p>{{ itemDetail.detail.pages }}</p>
+							</Col>
+							<Col span="5" offset="4">
+								<p>语言</p>
+							</Col>
+							<Col span="5">
+								<p>{{ itemDetail.detail.language }}</p>
+							</Col>
+						</Row>
 
-                    <div class="book-description">
-                        <Card>
-                            <p slot="title">简介</p>
-                            <p>{{ itemDetail.information.introduction }}</p>
-                        </Card>
-                    </div>
+						<div class="book-description">
+							<Card>
+								<p slot="title">简介</p>
+								<p>{{ itemDetail.information.introduction }}</p>
+							</Card>
+						</div>
 
-                    <div class="book-content">
-                        <Collapse>
-                            <Panel name="1">目录
-                                <p slot="content">{{ itemDetail.information.content }}</p>
-                            </Panel>
-                        </Collapse>
-                    </div>
-                </TabPane>
+						<div class="book-content">
+							<Collapse>
+								<Panel name="1">目录
+									<p slot="content">{{ itemDetail.information.content }}</p>
+								</Panel>
+							</Collapse>
+						</div>
+					</TabPane>
 
-                <TabPane label="用户评价" name="comment">
-                    <div v-if="total_comments > 0" class="comment-list" v-for="item in showing_comments">
-                        <Card>
-                            <p slot="title">{{ item.user }}</p>
-                            <p>{{ item.comment }}</p>
-                        </Card>
-                    </div>
-                    <div v-else class="no_comment">暂无评论</div>
-                    <div class="page-switch">
-                        <Page :total="total_comments" :page-size="page_comments" show-total @on-change="choose_page"></Page>
-                    </div>
-                </TabPane>
-            </Tabs>
+					<TabPane label="用户评价" name="comment">
+						<div v-if="total_comments > 0" class="comment-list" v-for="item in showing_comments">
+							<Card>
+								<p slot="title">{{ item.user }}</p>
+								<p>{{ item.comment }}</p>
+							</Card>
+						</div>
+						<div v-else class="no_comment">暂无评论</div>
+						<div class="page-switch">
+							<Page :total="total_comments" :page-size="page_comments" show-total @on-change="choose_page"></Page>
+						</div>
+					</TabPane>
+				</Tabs>
+			</div>
         </div>
-
+        <div v-else class="no-book">
+            <p>未找到指定图书</p>
+        </div>
 
     </div>
 </template>
@@ -140,7 +144,8 @@
         },
         data: function () {
             return {
-                good_source: ["淘宝", "京东", "天猫", "亚马逊"],
+                noBook: false,
+                good_source: ["淘宝", "京东", "天猫", "亚马逊", "当当"],
                 total_comments: this.itemDetail.comments.length,
                 showing_comments: [],
                 current_page: 1,
@@ -149,6 +154,7 @@
         },
         methods: {
             openUrl: function () {
+//                alert(typeof this.itemDetail);
                 window.open(this.itemDetail.url);
             },
             choose_page: function (page) {
@@ -162,8 +168,13 @@
         },
         watch: {
             itemDetail: function (new_obj) {
-                this.total_comments = new_obj.comments.length;
-                this.choose_page(1);
+                if (new_obj === undefined) {
+                    this.noBook = true;
+                } else {
+                    this.noBook = false;
+                    this.total_comments = new_obj.comments.length;
+                    this.choose_page(1);
+                }
             }
         }
     }
