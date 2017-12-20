@@ -2,19 +2,27 @@
   <div id="goodList">
     <div class="goods">
       <Row>
-        <Col span = 6>
+        <Col span = 8>
+        <Button type="primary" size="small" @click="showUsedBooks" style="width: 100px">显示二手书</Button>
+        </Col>
+        <Col span = 6 offset = 10>
+        <Button type="primary" size="small" @click="n_showUsedBooks" style="width: 100px">不显示二手书</Button>
+        </Col>
+      </Row>
+      <Row>
+        <Col span = 5 offset = 1>
         <p>商品图片</p>
         </Col>
         <Col span = 6>
         <p>商品名称</p>
         </Col>
-        <Col span = 4>
+        <Col span = 3>
         <p>商品价格</p>
         </Col>
         <Col span = 4>
         <p>商品销量</p>
         </Col>
-        <Col span = 4>
+        <Col span = 5>
         <p>商品评分</p>
         </Col>
       </Row>
@@ -60,6 +68,7 @@ export default {
     this.sort_arr();
   },
   data: () => ({
+    status : true,
     bb: book,
     // use array to save goods, here i use some examples to show the web
     goods: []
@@ -74,7 +83,10 @@ export default {
       this.$emit ('sendItem', good);
     },
     sort_arr: function(){
-      this.goods.splice(this.searchArr.length);
+      if (this.searchArr.length < 11){
+        this.goods.splice(this.searchArr.length);
+      }
+      else this.goods.splice(10);
       var i = 0;
       var j = 0;
       var save_arr = [];
@@ -97,20 +109,56 @@ export default {
             save_arr[i] = temp;
           }
           else if(save_arr[j].price === save_arr[i].price){
-            if (save_arr[j].sale_volume > save_arr[i].sale_volume){
+            if (save_arr[j].sales_volume > save_arr[i].sales_volume){
               var temp = save_arr[i];
               save_arr[i] = save_arr[j];
               save_arr[j] = temp;
+            }
+            else if (save_arr[j].sales_volume === save_arr[i].sales_volume){
+              if (save_arr[j].scores.good > save_arr[i].scores.good){
+                var temp = save_arr[i];
+                save_arr[i] = save_arr[j];
+                save_arr[j] = temp;
+              }
             }
           }
         }
       }
       var k = 0;
-      while (k < save_arr.length){
+      while (k < save_arr.length && k < 10){
         this.goods.splice(k, 1 ,save_arr[k]);
         k ++;
       }
       this.$emit ('sendItem', this.goods[0]);
+      return true;
+    },
+    showUsedBooks: function() {
+      if (this.status === false) {
+        this.sort_arr();
+        this.status = true;
+      }
+      return true;
+    },
+    n_showUsedBooks: function() {
+      if (status === true){
+        var temp = [];
+        for (var i = 0; i < this.goods.length; i ++){
+          if (this.goods[i].isUsedbooks === 0){
+            temp.push(this.goods[i]);
+          }
+        }
+        var k = 0;
+        if (temp.length < 11){
+          this.goods.splice(temp.length);
+        }
+        else this.goods.splice(10);
+        while (k < temp.length && k < 10){
+          this.goods.splice(k, 1, temp[k]);
+          k ++;
+        }
+        this.$emit ('sendItem', this.goods[0]);
+        this.status = false;
+      }
       return true;
     }
   }
