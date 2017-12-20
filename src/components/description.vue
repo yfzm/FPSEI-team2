@@ -114,11 +114,15 @@
                 </TabPane>
 
                 <TabPane label="用户评价" name="comment">
-                    <div class="comment-list" v-for="item in itemDetail.comments">
+                    <div v-if="total_comments > 0" class="comment-list" v-for="item in showing_comments">
                         <Card>
                             <p slot="title">{{ item.user }}</p>
                             <p>{{ item.comment }}</p>
                         </Card>
+                    </div>
+                    <div v-else class="no_comment">暂无评论</div>
+                    <div class="page-switch">
+                        <Page :total="total_comments" :page-size="page_comments" show-total @on-change="choose_page"></Page>
                     </div>
                 </TabPane>
             </Tabs>
@@ -131,16 +135,31 @@
 <script>
     export default {
         props: ['itemDetail'],
+        mounted() {
+            this.choose_page(1);
+        },
         data: function () {
             return {
                 good_score: this.itemDetail.scores.good,
                 credit_score: this.itemDetail.scores.credit,
-                good_source: ["淘宝", "京东", "天猫", "亚马逊"]
+                good_source: ["淘宝", "京东", "天猫", "亚马逊"],
+                total_comments: this.itemDetail.comments.length,
+                showing_comments: [],
+                current_page: 1,
+                page_comments: 1
             }
         },
         methods: {
             openUrl: function () {
                 window.open(this.itemDetail.url);
+            },
+            choose_page: function (page) {
+                if (this.total_comments <= this.page_comments * page) {
+                    this.showing_comments = this.itemDetail.comments.slice((page - 1) * this.page_comments, this.total_comments);
+                } else {
+                    this.showing_comments = this.itemDetail.comments.slice((page - 1) * this.page_comments, page * this.page_comments);
+                }
+
             }
         }
     }
@@ -214,6 +233,11 @@
 
     .comment-list {
         padding-top: 15px;
+    }
+
+    .page-switch {
+        padding: 30px 0;
+        text-align: center;
     }
 
 </style>
