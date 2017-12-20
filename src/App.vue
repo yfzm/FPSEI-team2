@@ -7,12 +7,12 @@
         <div class="page-padding">
             <div class="page_body">
                 <Row>
-                    <Col span="8">
+                    <Col span="7">
                         <GoodList id="good_list" v-bind:search-arr="search_result"
                         v-on:sendItem="getItem"></GoodList>
                     </Col>
 
-                    <Col span="15" offset="1">
+                    <Col span="16" offset="1">
                         <Description id="description" v-bind:item-detail="book_info"></Description>
                     </Col>
                 </Row>
@@ -89,7 +89,7 @@
 
 <style>
     #app {
-        background: #ececec;
+        background: #eeeeee;
     }
 
     .page-padding {
@@ -99,11 +99,11 @@
 
     .page_body {
         margin: 0 auto;
-        max-width: 1400px;
+        max-width: 1350px;
         min-width: 1100px;
-        border-radius: 10px;
-        padding: 40px 30px 30px 30px;
-        background-color: #ffffff
+        /*border-radius: 10px;*/
+        /*padding: 40px 30px 30px 30px;*/
+        /*background-color: #ffffff*/
     }
 
     #search_box {
@@ -122,6 +122,11 @@
     }
 
     #description {
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        padding: 40px 30px;
+        background: #ffffff;
 
     }
 
