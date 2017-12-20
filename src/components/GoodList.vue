@@ -28,15 +28,16 @@
       </Row>
       <div v-if = "searchArr.length === 0">
         <Row>
-          <Card>
-            <Col span = 8 offset = 8>
-              <p>{{result}}</p>
-            </Col>
-          </Card>
+          <Col span = 8 offset = 8>
+            <Card>
+              <p>无搜索结果</p>
+            </Card>
+          </Col>
+
         </Row>
       </div>
       <div v-else>
-        <div v-for="good, index in goods" class="good">
+        <div v-for="good, index in showing_goods" class="good">
           <div class="item-padding">
             <div class="good-item" @click = "send_Item(good)">
               <Card>
@@ -63,6 +64,9 @@
             </div>
           </div>
         </div>
+        <div v-if="total_goods > page_goods" class="good-page-switch">
+          <Page size="small" :total="total_goods" :page-size="page_goods" @on-change="choose_page"></Page>
+        </div>
       </div>
     </div>
   </div>
@@ -75,17 +79,25 @@ export default {
   props: ['searchArr'],
   mounted(){
     this.sort_arr();
+    this.total_goods = this.goods.length;
+    this.choose_page(1);
   },
   data: () => ({
     status : true,
     bb: book,
-    result : "无搜索结果",
     // use array to save goods, here i use some examples to show the web
-    goods: []
+    goods: [],
+    total_goods: 0,
+    showing_goods: [],
+    current_page: 1,
+    page_goods: 6
   }),
   watch:{
     searchArr: function(new_Arr) {
       this.sort_arr(new_Arr);
+      this.total_goods = this.goods.length;
+      this.current_page = 1;
+      this.choose_page(1);
     }
   },
   methods: {
@@ -167,6 +179,13 @@ export default {
         this.status = false;
       }
       return true;
+    },
+    choose_page: function (page) {
+      if (this.total_goods <= this.page_goods * page) {
+        this.showing_goods = this.goods.slice((page - 1) * this.page_goods, this.total_goods);
+      } else {
+        this.showing_goods = this.goods.slice((page - 1) * this.page_goods, page * this.page_goods);
+      }
     }
   }
 }
@@ -174,12 +193,16 @@ export default {
 <style>
 
   .item-padding {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 8px 0;
   }
 
   .good-item {
     cursor: pointer;
+  }
+
+  .good-page-switch {
+    padding: 20px 0;
+    text-align: center;
   }
 /*#goodList {*/
   /*margin: 0 auto;*/
