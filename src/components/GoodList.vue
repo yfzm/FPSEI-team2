@@ -55,7 +55,7 @@
                   </Col>
                   <Col span = 4>
                     <p class = "score">{{ good.scores.good }}</p>
-                    
+
                   </Col>
                 </Row>
               </Card>
@@ -199,6 +199,7 @@ export default {
   .good-page-switch {
     padding: 20px 0;
     text-align: center;
+  }
 
   .code-row-bg{
     padding-top : 10px;
