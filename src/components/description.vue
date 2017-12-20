@@ -140,13 +140,11 @@
         },
         data: function () {
             return {
-                good_score: this.itemDetail.scores.good,
-                credit_score: this.itemDetail.scores.credit,
                 good_source: ["淘宝", "京东", "天猫", "亚马逊"],
                 total_comments: this.itemDetail.comments.length,
                 showing_comments: [],
                 current_page: 1,
-                page_comments: 1
+                page_comments: 5
             }
         },
         methods: {
@@ -160,6 +158,12 @@
                     this.showing_comments = this.itemDetail.comments.slice((page - 1) * this.page_comments, page * this.page_comments);
                 }
 
+            }
+        },
+        watch: {
+            itemDetail: function (new_obj) {
+                this.total_comments = new_obj.comments.length;
+                this.choose_page(1);
             }
         }
     }
