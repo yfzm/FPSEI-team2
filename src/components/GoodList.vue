@@ -3,15 +3,12 @@
     <div class="goods">
       <Row>
         <Col span = 8>
-        <Button type="primary" size="small" @click="showUsedBooks" style="width: 100px">显示二手书</Button>
-        </Col>
-        <Col span = 6 offset = 10>
-        <Button type="primary" size="small" @click="n_showUsedBooks" style="width: 100px">不显示二手书</Button>
+        <Button type="primary" size="small" @click="showUsedBooks" style="width: 150px">显示/不显示二手书</Button>
         </Col>
       </Row>
       <Row type="flex" justify="center" align="bottom" class="code-row-bg">
         <Col span = 5 offset = 1>
-        <p>商品图片</p>
+        <p>图片</p>
         </Col>
         <Col span = 6>
         <p>名称</p>
@@ -57,6 +54,7 @@
                   </Col>
                   <Col span = 4>
                     <p class = "score">{{ good.scores.good }}</p>
+                    
                   </Col>
                 </Row>
               </Card>
@@ -147,10 +145,7 @@ export default {
         this.sort_arr();
         this.status = true;
       }
-      return true;
-    },
-    n_showUsedBooks: function() {
-      if (this.status === true){
+      else{
         var temp = [];
         for (var i = 0; i < this.goods.length; i ++){
           if (this.goods[i].isUsedbooks === 0){
@@ -174,12 +169,16 @@ export default {
 <style>
 
   .item-padding {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-bottom: 10px;
   }
 
   .good-item {
     cursor: pointer;
+  }
+
+  .code-row-bg{
+    padding-top : 10px;
   }
 /*#goodList {*/
   /*margin: 0 auto;*/
