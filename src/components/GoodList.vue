@@ -28,9 +28,11 @@
       </Row>
       <div v-if = "searchArr.length === 0">
         <Row>
-          <Col span = 8 offset = 8>
-            <p>{{result}}</p>
-          </Col>
+          <Card>
+            <Col span = 8 offset = 8>
+              <p>{{result}}</p>
+            </Col>
+          </Card>
         </Row>
       </div>
       <div v-else>
@@ -91,13 +93,10 @@ export default {
       this.$emit ('sendItem', good);
     },
     sort_arr: function(){
-      if (this.searchArr.length < 11){
-        this.goods.splice(this.searchArr.length);
-      }
-      else if (this.searchArr.length === 0){
+      if (this.searchArr.length === 0){
         this.$emit ('sendItem',[]);
       }
-      else this.goods.splice(10);
+      this.goods.splice(this.searchArr.length);
       var i = 0;
       var j = 0;
       var save_arr = [];
@@ -136,7 +135,7 @@ export default {
         }
       }
       var k = 0;
-      while (k < save_arr.length && k < 10){
+      while (k < save_arr.length){
         this.goods.splice(k, 1 ,save_arr[k]);
         k ++;
       }
@@ -159,11 +158,8 @@ export default {
           }
         }
         var k = 0;
-        if (temp.length < 11){
-          this.goods.splice(temp.length);
-        }
-        else this.goods.splice(10);
-        while (k < temp.length && k < 10){
+        this.goods.splice(temp.length);
+        while (k < temp.length){
           this.goods.splice(k, 1, temp[k]);
           k ++;
         }
