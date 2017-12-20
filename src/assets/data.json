@@ -86,7 +86,7 @@
             "detail": {
                 "publisher": "人民邮电出版社",
                 "pub_date": "2012-07-01",
-                "pages": -1,
+                "pages": 936,
                 "language": "中文"
             },
             "information": {
@@ -94,7 +94,7 @@
                 "content": "***章 预备知识\n第2章 开始学习C++\n第3章 处理数据\n第4章 复合类型\n第5章 循环和关系表达式\n第6章 分支语句和逻辑运算符\n第7章 函数——C++的编程模块\n第8章 函数探幽\n第9章 内存模型和名称空间\n***0章 对象和类"
             },
             "scores": {
-                "credit": 4.5,
+                "credit": 3.5,
                 "good": 4.7
             },
             "comments": [{
@@ -122,7 +122,7 @@
             "detail": {
                 "publisher": "人民邮电出版社",
                 "pub_date": "2016-12",
-                "pages": -1,
+                "pages": 570,
                 "language": "中文"
             },
             "information": {
@@ -176,6 +176,1661 @@
                 {
                     "user": "苏***1（匿名）",
                     "comment": "书有破损，找客服无人应，服务态度极差。这个价格对上这种服务性价比极低，以后再也不在这家买书了。"
+                }
+            ]
+        },
+        {
+            "id": 10005,
+            "isUsedbooks": 0,
+            "name": "深入理解计算机系统·英文·第三版",
+            "price": 184.00,
+            "freight": 0,
+            "sales_volume": 12324,
+            "author": "Randal E. Bryant，David R. O’Hallaron",
+            "seller": 1,
+            "tags": [0],
+            "url": "http://item.jd.com/12155718.html",
+            "picture": "http://img13.360buyimg.com/n5/jfs/t4531/220/483445858/300979/584172a2/58d0cf49N6c0daead.jpg",
+            "detail": {
+                "publisher": "机械工业出版社",
+                "pub_date": "2017-04-01",
+                "pages": 1047,
+                "language": "English"
+            },
+            "information": {
+                "introduction": "本书是一本将计算机软件和硬件理论结合讲述的经典教材，内容涵盖计算机导论、体系结构和处理器设计等多门课程。本书*大的特点是为程序员描述计算机系统的实现细节，通过描述程序是如何映射到系统上，以及程序是如何执行的，使读者更好地理解程序的行为，找到程序效率低下的原因。和第2版相比，本版内容上*大的变化是，从以IA32和x86-64为基础转变为完全以x86-64为基础。",
+                "content": "1. A Tour of Computer Systems\n 1.1 Information Is Bits + Context\n 1.2 Programs Are Translated by Other Programs into Different Forms\n 1.3 It Pays to Understand How Compilation Systems Work\n "
+            },
+            "scores": {
+                "credit": 4.2,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "对这本书的英文版仰慕已久，之前看过这本书的中文版，受益良多，但感觉还不够。作为一个程序猿，这本书可以说是必读的"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "超级棒！！关键是彩印版本！！看起来十分舒适！买了中文版和英文版结合起来一起看！真的超级好！！"
+                }
+            ]
+        },
+        {
+            "id": 10006,
+            "isUsedbooks": 0,
+            "name": "深入理解计算机系统·英文·第三版",
+            "price": 181.60,
+            "freight": 0,
+            "sales_volume": 8,
+            "author": "Randal E. Bryant，David R. O’Hallaron",
+            "seller": 1,
+            "tags": [2],
+            "url": "http://item.jd.com/11605122093.html",
+            "picture": "http://img13.360buyimg.com/n5/jfs/t4327/99/1855070778/114959/aaaa12d7/58c74405N0dd1223e.png",
+            "detail": {
+                "publisher": "机械工业出版社",
+                "pub_date": "2017-04-01",
+                "pages": 1,
+                "language": "English"
+            },
+            "information": {
+                "introduction": "本书是一本将计算机软件和硬件理论结合讲述的经典教材，内容涵盖计算机导论、体系结构和处理器设计等多门课程。本书*大的特点是为程序员描述计算机系统的实现细节，通过描述程序是如何映射到系统上，以及程序是如何执行的，使读者更好地理解程序的行为，找到程序效率低下的原因。和第2版相比，本版内容上*大的变化是，从以IA32和x86-64为基础转变为完全以x86-64为基础。",
+                "content": "1. 计算机系统漫游\n 1.1 信息就是位+上下文\n 1.2 程序被其他程序翻译成不同的格式\n 1.3 了解编译系统如何工作是大有益处的\n "
+            },
+            "scores": {
+                "credit": 4.9,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "包装很严实，书是硬皮的，质量很好！！"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "非常经典的计算机著作，从程序员角度剖析计算机运行的原理与过程。大师作品还是英语最正宗。"
+                }
+            ]
+        },
+        {
+            "id": 10007,
+            "isUsedbooks": 0,
+            "name": "深入理解计算机系统·英文·第三版",
+            "price": 181.60,
+            "freight": 0,
+            "sales_volume": 2,
+            "author": "Randal E. Bryant，David R. O’Hallaron",
+            "seller": 1,
+            "tags": [2],
+            "url": "http://item.jd.com/11605129869.html",
+            "picture": "http://img14.360buyimg.com/n5/jfs/t3124/220/8725541447/114959/aaaa12d7/58c743fdNe7ccfb6e.png",
+            "detail": {
+                "publisher": "机械工业出版社",
+                "pub_date": "2017-04-01",
+                "pages": 1,
+                "language": "English"
+            },
+            "information": {
+                "introduction": "本书是一本将计算机软件和硬件理论结合讲述的经典教材，内容涵盖计算机导论、体系结构和处理器设计等多门课程。本书*大的特点是为程序员描述计算机系统的实现细节，通过描述程序是如何映射到系统上，以及程序是如何执行的，使读者更好地理解程序的行为，找到程序效率低下的原因。和第2版相比，本版内容上*大的变化是，从以IA32和x86-64为基础转变为完全以x86-64为基础。",
+                "content": "1. 计算机系统漫游\n 1.1 信息就是位+上下文\n 1.2 程序被其他程序翻译成不同的格式\n 1.3 了解编译系统如何工作是大有益处的\n "
+            },
+            "scores": {
+                "credit": 4.2,
+                "good": 4.5
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "很好，书值得这个价"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "正版，精美！服务好，包装特别牢靠稳妥，我很满意！"
+                }
+            ]
+        },
+        {
+            "id": 10008,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 101.10,
+            "freight": 0,
+            "sales_volume": 1050,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 1,
+            "tags": [0],
+            "url": "https://item.jd.com/11144230.html",
+            "picture": "https://img10.360buyimg.com/n5/jfs/t2527/66/864325685/237956/ec9e931a/566e7d72N31c30163.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "这本书一直是我想买的，准备好好学学，也准备升职加薪。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "质量不错，机械工业出版社还是很良心的，值得购买"
+                }
+            ]
+        },
+        {
+            "id": 10009,
+            "isUsedbooks": 0,
+            "name": "C Primer Plus(第6版)(中文版)",
+            "price": 71.7,
+            "freight": 0,
+            "sales_volume": 250,
+            "author": "普拉达 (Stephen Prata) (作者),‎ 姜佑 (译者)",
+            "seller": 3,
+            "tags": [2],
+            "url": "https://www.amazon.cn/%E5%9B%BE%E4%B9%A6/dp/B01FE26HAU/ref=redir_mobile_desktop/462-5023534-1823600?ie=UTF8&%2AVersion%2A=1&%2Aentries%2A=0",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51k7PNeuQ7L._SX387_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "人民邮电出版社",
+                "pub_date": "2016年4月1日",
+                "pages": 730,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "《C Primer Plus（第6版）中文版》可作为C语言的教材，适用于需要系统学习C语言的初学者，也适用于巩固C语言知识或希望进一步提高编程技术的程序员。",
+                "content": "第1章初识C语言1\n 1.1C语言的起源\n 0.2 1.2选择C语言的理由\n 1.2.1设计特性\n 1.2.2高效性"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.0
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "说是c语言的权威此书当之无愧"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "书非常好，没有损坏，我的这本没有出现乱码和错别字"
+                }
+            ]
+        },
+        {
+            "id": 10010,
+            "isUsedbooks": 1,
+            "name": "C++ Primer Plus 第6版中文第六版",
+            "price": 80.10,
+            "freight": 0,
+            "sales_volume": 199,
+            "author": "蒂芬•普拉达 (Stephen Prata) (作者),‎ 张海龙 (译者)",
+            "seller": 3,
+            "tags": [2],
+            "url": "https://www.amazon.cn/C-Primer-Plus%E4%B8%AD%E6%96%87%E7%89%88-%E8%92%82%E8%8A%AC%E2%80%A2%E6%99%AE%E6%8B%89%E8%BE%BE/dp/B008A4XZRI/ref=redir_mobile_desktop?ie=UTF8&refRID=0Y5NS91H1DF5GHQX7KXS",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51EF65Xtg5L._SY498_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "人民邮电出版社",
+                "pub_date": "2012-07-01",
+                "pages": 936,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "C++是在C语言基础上开发的一种集面向对象编程、通用编程和传统的过程化编程于一体的编程语言，是C语言的超集。《C++ Primer Plus<第6版>中文版》由Stehpen Prata著，张海龙、袁国忠译：是根据2003年的ISO/ANSI C++标准编写的。通过大量短小精悍的程序详细而全面地阐述了C++的基本概念和技术。全书分为18章和10个附录，分别介绍了C++程序的运行方式、基本数据类型、复合数据类型、循环和关系表达式、分支语句和逻辑操作符、函数重载和函数模板、内存模型和名称空间、类的设计和使用、多态、虚函数、动态内存分配、继承、代码重用、友元、异常处理技术、string类和标准模板库、输入/输出等内容。《C++ Primer Plus<第6版>中文版》针对C++初学者，从C语言基础知识开始介绍，然后在此基础上详细阐述C++新增的特性，因此不要求读者有较多C语言方面的背景知识。本书可以作为高等院校C++课程的教材，也可以供初学者自学C++时使用。",
+                "content": "***章 预备知识\n第2章 开始学习C++\n第3章 处理数据\n第4章 复合类型\n第5章 循环和关系表达式\n第6章 分支语句和逻辑运算符\n第7章 函数——C++的编程模块\n第8章 函数探幽\n第9章 内存模型和名称空间\n***0章 对象和类"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "j***9（匿名）",
+                    "comment": "周围同学都在看这本书，这本书看着不累，很容易理解，如果啃完这一本至少基础肯定是比较扎实的了，而且有很多实际中经常遇到的问题和建议。感觉非常好，还在学习中。"
+                },
+                {
+                    "user": "苏***1（匿名）",
+                    "comment": "这本书解决了我很多长久以来的疑惑，是一本很好的入门书籍，由浅入深"
+                }
+            ]
+        },
+        {
+            "id": 10011,
+            "isUsedbooks": 0,
+            "name": "时间简史",
+            "price": 11.00,
+            "freight": 0,
+            "sales_volume": 750,
+            "author": "史蒂芬•霍金 (Stephen Hawking) (作者),‎ 许明贤 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B0011C2GGC/ref=sr_1_2?s=books&ie=UTF8&qid=1513766690&sr=1-2&keywords=%E6%97%B6%E9%97%B4%E7%AE%80%E5%8F%B2",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/41f9DX2BzRL._SX351_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "湖南科学技术出版社",
+                "pub_date": "2007-07-01",
+                "pages": 188,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "史蒂芬•霍金的《时间简史》，自1988年首版以来的10年岁月里，已成为科学著作的里程碑，在全球销售已近1000万册。首版内容介绍了宇宙本性最前沿的知识。微观和宏观世界观测技术领域方面10年来的进展证明了霍金教授的许多理论预言。他为了把观测的新知识介绍给读者，重写了前言，全面更新了原版的内容，并新增了一章有关虫洞和时间旅行的激动人心的课题。",
+                "content": "第一章 我们的宇宙图象\n 第二章 空间和时间\n 第三章 膨胀的宇宙\n 第四章 不确定性原理"
+            },
+            "scores": {
+                "credit": 4.9,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "物理学有一定基础的，完全可以阅读这本书。对于某一部分如果不能明了，不用停下来仔细思考，可以抓住几个重点概念然后继续读。这书完全可以作为思想类的书籍来理解。很喜欢，准备入手一本纸板的。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "个人觉得，这本书需要很高的专业背景才能读得懂；想想也是，要想搞懂第一推动，哪有那么容易啊。不过整体来说还是有那么一点点小收获吧。"
+                }
+            ]
+        },
+        {
+            "id": 10012,
+            "isUsedbooks": 0,
+            "name": "时间简史",
+            "price": 12.20,
+            "freight": 0,
+            "sales_volume": 10750,
+            "author": "[英] 史蒂芬·霍金 著；许明贤，吴忠超 译",
+            "seller": 1,
+            "tags": [2],
+            "url": "https://item.jd.com/10018510.html",
+            "picture": "https://img10.360buyimg.com/n5/g10/M00/00/19/rBEQWFEA_k4IAAAAAAgpp9zHT58AAAKBgBdNQEACCm_233.jpg",
+            "detail": {
+                "publisher": "湖南科学技术出版社",
+                "pub_date": "2007-07-01",
+                "pages": 188,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "史蒂芬•霍金的《时间简史》，自1988年首版以来的10年岁月里，已成为科学著作的里程碑，在全球销售已近1000万册。首版内容介绍了宇宙本性最前沿的知识。微观和宏观世界观测技术领域方面10年来的进展证明了霍金教授的许多理论预言。他为了把观测的新知识介绍给读者，重写了前言，全面更新了原版的内容，并新增了一章有关虫洞和时间旅行的激动人心的课题。",
+                "content": "第一章 我们的宇宙图象\n 第二章 空间和时间\n 第三章 膨胀的宇宙\n 第四章 不确定性原理"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "也是挺厚的书，平装本，需要花一点时间看完了。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "比插图版的要便宜，感觉这种简装就很好，厚厚一本得看一段时间了"
+                }
+            ]
+        },
+        {
+            "id": 10013,
+            "isUsedbooks": 0,
+            "name": "时间简史（插图版）",
+            "price": 31.30,
+            "freight": 0,
+            "sales_volume": 10750,
+            "author": "[英] 史蒂芬·霍金 著；许明贤，吴忠超 译",
+            "seller": 1,
+            "tags": [2],
+            "url": "https://item.jd.com/10018533.html",
+            "picture": "https://img13.360buyimg.com/n5/jfs/t5749/151/2155508718/91400/b98f9834/592d2215N0f718a02.jpg",
+            "detail": {
+                "publisher": "湖南科学技术出版社",
+                "pub_date": "2007-07-01",
+                "pages": 243,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "史蒂芬•霍金的《时间简史》，自1988年首版以来的10年岁月里，已成为科学著作的里程碑，在全球销售已近1000万册。首版内容介绍了宇宙本性最前沿的知识。微观和宏观世界观测技术领域方面10年来的进展证明了霍金教授的许多理论预言。他为了把观测的新知识介绍给读者，重写了前言，全面更新了原版的内容，并新增了一章有关虫洞和时间旅行的激动人心的课题。",
+                "content": "第一章 我们的宇宙图象\n 第二章 空间和时间\n 第三章 膨胀的宇宙\n 第四章 不确定性原理"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "有彩色插图，印刷质量不错，应该很快能看完，当做科普扩展自己的视野。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "不错，正版，244页，但没有封膜，印刷精美，铜版纸，可做收藏书籍。值得购买。"
+                }
+            ]
+        },
+        {
+            "id": 10014,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 3.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10015,
+            "isUsedbooks": 0,
+            "name": "时间简史（插图版）",
+            "price": 19.80,
+            "freight": 0,
+            "sales_volume": 750,
+            "author": "[英] 史蒂芬·霍金 著；许明贤，吴忠超 译",
+            "seller": 2,
+            "tags": [3],
+            "url": "https://detail.tmall.com/item.htm?id=534207854120&ali_refid=a3_430673_1006:1106035734:N:%E6%97%B6%E9%97%B4%E7%AE%80%E5%8F%B2:ed7d4c84530a3ed2ded5b3fa9c5fb163&ali_trackid=1_ed7d4c84530a3ed2ded5b3fa9c5fb163&spm=a2e15.8261149.07626516002.1",
+            "picture": "https://img.alicdn.com/bao/uploaded/i3/1744416867/TB1VpjAc0HO8KJjSZFHXXbWJFXa_!!0-item_pic.jpg_430x430q90.jpg",
+            "detail": {
+                "publisher": "湖南科学技术出版社",
+                "pub_date": "2007-07-01",
+                "pages": 243,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "史蒂芬•霍金的《时间简史》，自1988年首版以来的10年岁月里，已成为科学著作的里程碑，在全球销售已近1000万册。首版内容介绍了宇宙本性最前沿的知识。微观和宏观世界观测技术领域方面10年来的进展证明了霍金教授的许多理论预言。他为了把观测的新知识介绍给读者，重写了前言，全面更新了原版的内容，并新增了一章有关虫洞和时间旅行的激动人心的课题。",
+                "content": "第一章 我们的宇宙图象\n 第二章 空间和时间\n 第三章 膨胀的宇宙\n 第四章 不确定性原理"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "有彩色插图，印刷质量不错，应该很快能看完，当做科普扩展自己的视野。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "不错，正版，244页，但没有封膜，印刷精美，铜版纸，可做收藏书籍。值得购买。"
+                }
+            ]
+        },
+        {
+            "id": 10016,
+            "isUsedbooks": 0,
+            "name": "时间简史（插图版）",
+            "price": 31.10,
+            "freight": 0,
+            "sales_volume": 24545,
+            "author": "[英] 史蒂芬·霍金 著；许明贤，吴忠超 译",
+            "seller": 4,
+            "tags": [0],
+            "url": "http://product.dangdang.com/463785.html",
+            "picture": "http://img3m5.ddimg.cn/69/27/463785-1_u_1.jpg",
+            "detail": {
+                "publisher": "湖南科学技术出版社",
+                "pub_date": "2007-07-01",
+                "pages": 243,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "史蒂芬•霍金的《时间简史》，自1988年首版以来的10年岁月里，已成为科学著作的里程碑，在全球销售已近1000万册。首版内容介绍了宇宙本性最前沿的知识。微观和宏观世界观测技术领域方面10年来的进展证明了霍金教授的许多理论预言。他为了把观测的新知识介绍给读者，重写了前言，全面更新了原版的内容，并新增了一章有关虫洞和时间旅行的激动人心的课题。",
+                "content": "第一章 我们的宇宙图象\n 第二章 空间和时间\n 第三章 膨胀的宇宙\n 第四章 不确定性原理"
+            },
+            "scores": {
+                "credit": 4.9,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "花了一个星期时间看完了这本书，因为不是学这个专业的，所以看得有点云里雾里的，书中有很多词汇并不能完全的理解。但是看完本书，最起码对我们的宇宙，以及我们所处的地球多了一些了解。因此本书对自己业余知识面的丰富还是很有益处的，而且看完这本书对自己人生的意义也有了更进一步的思考与领悟。 "
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "本书的装帧，图文，叙述方式都非常不错，可读性强，引人入胜。 "
+                }
+            ]
+        },
+        {
+            "id": 10017,
+            "isUsedbooks": 0,
+            "name": "荷马史诗·奥德赛",
+            "price": 28.70,
+            "freight": 0,
+            "sales_volume": 1050,
+            "author": "[古希腊] 荷马 著；王焕生 译",
+            "seller": 1,
+            "tags": [2],
+            "url": "http://item.jd.com/11711291.html?cu=true&utm_source=baidu-search&utm_medium=cpc&utm_campaign=t_262767352_baidusearch&utm_term=23672965503_0_b4d6a063ef2345df99a2531776bf8097",
+            "picture": "http://img11.360buyimg.com/n5/jfs/t1213/7/1282093837/1214677/7b55fbc6/5588bda5N819b1b7e.jpg",
+            "detail": {
+                "publisher": "人民文学出版社",
+                "pub_date": "2015-06-01",
+                "pages": 493,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "《名著名译丛书 荷马史诗·奥德赛》是以特洛亚战争传说为题材的“系列史诗”中惟一一部传世的“返乡史诗”。足智多谋的奥德修斯用木马计攻陷特洛亚城之后，率领自己的军队渡海回国。途中遭遇各种艰难险阻，历经十年飘泊，随行同伴全部遇难，只有他在女神雅典娜的佑助下，坚韧不拔地孤身一人回到久别的故乡。",
+                "content": "第一卷奥林波斯神明议允奥德修斯返家园"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "装帧精美，纸质好，印刷清晰，还没读不知翻译的如何，拿到手里很喜欢！"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "经典之作，是为了配合读尤利西斯买的这本书"
+                }
+            ]
+        },
+        {
+            "id": 10018,
+            "isUsedbooks": 0,
+            "name": "荷马史诗：伊利亚特·奥德赛",
+            "price": 33.20,
+            "freight": 0,
+            "sales_volume": 2500,
+            "author": "[古希腊] 荷马 著；王焕生 译",
+            "seller": 4,
+            "tags": [0],
+            "url": "http://product.dangdang.com/24170737.html?_utm_sem_id=11770080&_ddclickunion=422-kw-9-%CE%C4%D2%D5%C9%FA%BB%EE%C0%F8%D6%BE-%CE%C4%D1%A7_%CD%E2%B9%FA%CA%AB%B8%E8_%BA%C9%C2%ED%CA%B7%CA%AB|ad_type=0|sys_id=1",
+            "picture": "http://img3m7.ddimg.cn/85/6/24170737-1_u_1.jpg",
+            "detail": {
+                "publisher": "人民文学出版社",
+                "pub_date": "2015-06-01",
+                "pages": 493,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "《名著名译丛书 荷马史诗·奥德赛》是以特洛亚战争传说为题材的“系列史诗”中惟一一部传世的“返乡史诗”。足智多谋的奥德修斯用木马计攻陷特洛亚城之后，率领自己的军队渡海回国。途中遭遇各种艰难险阻，历经十年飘泊，随行同伴全部遇难，只有他在女神雅典娜的佑助下，坚韧不拔地孤身一人回到久别的故乡。",
+                "content": "第一卷奥林波斯神明议允奥德修斯返家园"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.2
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "非常喜欢的两部书，清晰，流畅，多头线索并进，主题突出，结构有序，很值得买来。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这写的啥鬼，完全看不懂，像是某种诗？？？？"
+                }
+            ]
+        },
+        {
+            "id": 10019,
+            "isUsedbooks": 0,
+            "name": "钢铁是怎样炼成的",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 66650,
+            "author": "奥斯特洛夫斯基 (作者),‎ 吴兴勇 (译者)",
+            "seller": 3,
+            "tags": [2],
+            "url": "https://www.amazon.cn/%E9%92%A2%E9%93%81%E6%98%AF%E6%80%8E%E6%A0%B7%E7%82%BC%E6%88%90%E7%9A%84-%E5%A5%A5%E6%96%AF%E7%89%B9%E6%B4%9B%E5%A4%AB%E6%96%AF%E5%9F%BA/dp/B002V64G7Y/ref=redir_mobile_desktop?ie=UTF8&pi=SL500_SY115",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51zbv6K4LwL._SX342_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "吉林出版集团有限责任公司",
+                "pub_date": "2009年9月1日",
+                "pages": 335,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "小说以主人公保尔·柯察金的生活经历为线索，展现了那段历史期间，苏俄广阔的历史画面和人民艰苦卓绝的斗争生活。保尔·柯察金出生在一个贫苦的工人家庭。十月革命后，老布尔什维克茹赫赖来到保尔的家乡开展工作，使保尔懂得了许多革命道理。",
+                "content": "第一部\n第一章\n第二章\n第三章\n第四章"
+            },
+            "scores": {
+                "credit": 4.2,
+                "good": 4.2
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "值得买给孩子一读"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "童年回忆（滑稽）"
+                }
+            ]
+        },
+        {
+            "id": 10020,
+            "isUsedbooks": 0,
+            "name": "Python基础教程（第2版）",
+            "price": 39.50,
+            "freight": 0,
+            "sales_volume": 350,
+            "author": "[挪] Magnus Lie Hetland 著；司维，曾军崴，谭颖华 译",
+            "seller": 1,
+            "tags": [2],
+            "url": "http://item.jd.com/11461683.html",
+            "picture": "http://img13.360buyimg.com/n5/jfs/t5659/286/1999153746/316410/a74ebcc3/592bf168N9c71a877.jpg",
+            "detail": {
+                "publisher": "人民邮电出版社",
+                "pub_date": "2014-06-01",
+                "pages": 470,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "《Python基础教程（第2版·修订版）》是经典的Python入门教程，层次鲜明，结构严谨，内容翔实，特别是最后几章，作者将前面讲述的内容应用到10个引人入胜的项目中，并以模板的形式介绍了项目的开发过程，手把手教授Python开发，让读者从项目中领略Python的真正魅力。",
+                "content": "第1章 快速改造：基础知识 "
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.3
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "包装完整没有破损，纸质还行，印刷也清晰。就是本来就挺薄的，还豆大的字，内容感觉没多少啊。不过打折力度超大，买来当工具书查的。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "物流非常给力，书是入门的，看着很不错"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "6666666"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "Very good！！！！"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "书有破损，但服务好评"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "很棒"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "还可以，非常浅显易懂"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "非常给力，看着很不错"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "挺好的"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "物流太拖拉了"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "很ok"
+                }
+            ]
+        },
+        {
+            "id": 10021,
+            "isUsedbooks": 0,
+            "name": "Python基础教程第二版",
+            "price": 39.50,
+            "freight": 0,
+            "sales_volume": 1150,
+            "author": "[挪] Magnus Lie Hetland 著；司维，曾军崴，谭颖华 译",
+            "seller": 4,
+            "tags": [0],
+            "url": "http://product.dangdang.com/23473514.html",
+            "picture": "http://img3m4.ddimg.cn/20/11/23473514-2_u_2.jpg",
+            "detail": {
+                "publisher": "人民邮电出版社",
+                "pub_date": "2014-06-01",
+                "pages": 470,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "《Python基础教程（第2版·修订版）》是经典的Python入门教程，层次鲜明，结构严谨，内容翔实，特别是最后几章，作者将前面讲述的内容应用到10个引人入胜的项目中，并以模板的形式介绍了项目的开发过程，手把手教授Python开发，让读者从项目中领略Python的真正魅力。",
+                "content": "第1章 快速改造：基础知识 "
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.8
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "包装完整没有破损，纸质还行，印刷也清晰。就是本来就挺薄的，还豆大的字，内容感觉没多少啊。不过打折力度超大，买来当工具书查的。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "物流非常给力，书是入门的，看着很不错"
+                }
+            ]
+        },
+        {
+            "id": 10022,
+            "isUsedbooks": 0,
+            "name": "JavaScript高级程序设计(第3版)",
+            "price": 82.90,
+            "freight": 0,
+            "sales_volume": 350,
+            "author": "[美] Nicholas C.Zakas 著；李松峰，曹力 译",
+            "seller": 1,
+            "tags": [2],
+            "url": "http://item.jd.com/10951037.html",
+            "picture": "http://img12.360buyimg.com/n5/jfs/t5713/237/2034261320/248346/e364dcaa/592bf164N7a4187c3.jpg",
+            "detail": {
+                "publisher": "人民邮电出版社",
+                "pub_date": "2012-03-01",
+                "pages": 730,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为JavaScript技术经典名著，《JavaScript高级程序设计（第3版）》承继了之前版本全面深入、贴近实战的特点，在详细讲解了JavaScript语言的核心之后，条分缕析地为读者展示了现有规范及实现为开发Web应用提供的各种支持和特性。",
+                "content": "第1章　JavaScript简介　1\n1.1　JavaScript简史　1"
+            },
+            "scores": {
+                "credit": 4.8,
+                "good": 4.8
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "正品无疑，内容不错，很厚的一本书，前端开发人员必备，无光盘，代码可以到书中提到的网站下载"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "书本挺好，加油学习。"
+                }
+            ]
+        },
+        {
+            "id": 10023,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10024,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10025,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10026,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10027,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10028,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10029,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10030,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10031,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10032,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10033,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10034,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.5,
+                "good": 4.7
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10035,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10036,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10037,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10038,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10039,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10040,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10041,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10042,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10043,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10044,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10045,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10046,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10047,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        },
+        {
+            "id": 10048,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
+                }
+            ]
+        }, {
+            "id": 10049,
+            "isUsedbooks": 0,
+            "name": "Algorithms",
+            "price": 34.8,
+            "freight": 0,
+            "sales_volume": 50,
+            "author": "Sanjoy Dasgupta,‎ Christos Papadimitriou,‎ Umesh Vazirani,‎ 王沛 (译者),‎ 唐扬斌 (译者),‎ 刘齐军 (译者)",
+            "seller": 3,
+            "tags": [0],
+            "url": "https://www.amazon.cn/dp/B001CZJEO0/",
+            "picture": "https://images-cn.ssl-images-amazon.com/images/I/51Fp4vXuBkL._SX410_BO1,204,203,200_.jpg",
+            "detail": {
+                "publisher": "清华大学出版社",
+                "pub_date": "2008-07-01",
+                "pages": 345,
+                "language": "中文"
+            },
+            "information": {
+                "introduction": "作为一本介绍算法技术和思想的书籍，本书不仅是面各信息学科大学生的优秀教材（或参考书），更是将任何具有初等数学基础的人引入算法应用与研究殿堂的一块引路石。本书循序渐进、深入浅出地展示了算法研究与应用领域中，从模型分析、算法构造到复杂性分析和算法优化的方方面面。涉及内容从古老的算术算法、排序算法、简单算法、线性规划、动态规划、随机算法以及NP复杂理论，甚至是尚未完全显现全貌的量子计算，覆盖了经典、现代和未来算法发展的众多代表性成果。　　《国外经典教材·计算机科学与技术：算法概论》选材新颖，内容丰富，适用于作为计算机学科以及相关学科算法课程的教材和参考书，同时也可作从事算法研究的入门书籍。",
+                "content": "第0章 序言\n 0.1 书籍和算法\n 0.2 从Fibonacci数列开始\n 0.3 大O符号\n 习题"
+            },
+            "scores": {
+                "credit": 4.6,
+                "good": 4.9
+            },
+            "comments": [{
+                    "user": "匿名用户",
+                    "comment": "内容很全面，如果你是个爱动笔算的人，这本书很适合你，算法精辟，但是推倒过程太简明了，笔算了半天才能搞明白，既有基本思想又有具体算法，但是本书更偏重前者，如果要详细了解某个算法，还是看算法导论得了。不论是刚接触算法还是已经有所研究，我认为这本书都值得珍藏。"
+                },
+                {
+                    "user": "匿名用户",
+                    "comment": "这本书据说评价很高 我们学校指定用书，然后感觉翻译好烂 后悔应该买本英文版的书本内容写的蛮简略 不如算法导论那本 可能习题出的比较奥好吧"
                 }
             ]
         }

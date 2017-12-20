@@ -9,51 +9,60 @@
         <Button type="primary" size="small" @click="n_showUsedBooks" style="width: 100px">不显示二手书</Button>
         </Col>
       </Row>
-      <Row>
+      <Row type="flex" justify="center" align="bottom" class="code-row-bg">
         <Col span = 5 offset = 1>
         <p>商品图片</p>
         </Col>
         <Col span = 6>
-        <p>商品名称</p>
-        </Col>
-        <Col span = 3>
-        <p>商品价格</p>
+        <p>名称</p>
         </Col>
         <Col span = 4>
-        <p>商品销量</p>
+        <p>价格</p>
+        </Col>
+        <Col span = 3>
+        <p>销量</p>
         </Col>
         <Col span = 5>
-        <p>商品评分</p>
+        <p>评分</p>
         </Col>
       </Row>
-      <div v-for="good, index in goods" class="good">
-        <div class="item-padding">
-          <div class="good-item" @click = "send_Item(good)">
-            <Card>
-              <Row>
-                <Col span = 6>
-                <img :src="good.picture" height="70px" width="70px">
-                </Col>
-                <Col span = 6>
-                <p class = "good_name">
-                  {{ good.name }}
-                </p>
-                </Col>
-                <Col span = 4>
-                <p class="price">￥{{good.price.toFixed(2)}}</p>
-                </Col>
-                <Col span = 4>
-                <p class = "volume">{{ good.sales_volume }}</p>
-                </Col>
-                <Col span = 4>
-                <p class = "score">{{ good.scores.good }}</p>
-                </Col>
-              </Row>
-            </Card>
+      <div v-if = "searchArr.length === 0">
+        <Row>
+          <Card>
+            <Col span = 8 offset = 8>
+              <p>{{result}}</p>
+            </Col>
+          </Card>
+        </Row>
+      </div>
+      <div v-else>
+        <div v-for="good, index in goods" class="good">
+          <div class="item-padding">
+            <div class="good-item" @click = "send_Item(good)">
+              <Card>
+                <Row>
+                  <Col span = 6>
+                    <img :src="good.picture" height="70px" width="70px">
+                  </Col>
+                  <Col span = 6>
+                    <p class = "good_name">
+                      {{ good.name }}
+                    </p>
+                  </Col>
+                  <Col span = 5>
+                    <p class="price">￥{{good.price.toFixed(2)}}</p>
+                  </Col>
+                  <Col span = 3>
+                    <p class = "volume">{{ good.sales_volume }}</p>
+                  </Col>
+                  <Col span = 4>
+                    <p class = "score">{{ good.scores.good }}</p>
+                  </Col>
+                </Row>
+              </Card>
+            </div>
           </div>
-
         </div>
-
       </div>
     </div>
   </div>
@@ -70,6 +79,7 @@ export default {
   data: () => ({
     status : true,
     bb: book,
+    result : "无搜索结果",
     // use array to save goods, here i use some examples to show the web
     goods: []
   }),
@@ -83,10 +93,10 @@ export default {
       this.$emit ('sendItem', good);
     },
     sort_arr: function(){
-      if (this.searchArr.length < 11){
-        this.goods.splice(this.searchArr.length);
+      if (this.searchArr.length === 0){
+        this.$emit ('sendItem',[]);
       }
-      else this.goods.splice(10);
+      this.goods.splice(this.searchArr.length);
       var i = 0;
       var j = 0;
       var save_arr = [];
@@ -125,7 +135,7 @@ export default {
         }
       }
       var k = 0;
-      while (k < save_arr.length && k < 10){
+      while (k < save_arr.length){
         this.goods.splice(k, 1 ,save_arr[k]);
         k ++;
       }
@@ -140,7 +150,7 @@ export default {
       return true;
     },
     n_showUsedBooks: function() {
-      if (status === true){
+      if (this.status === true){
         var temp = [];
         for (var i = 0; i < this.goods.length; i ++){
           if (this.goods[i].isUsedbooks === 0){
@@ -148,11 +158,8 @@ export default {
           }
         }
         var k = 0;
-        if (temp.length < 11){
-          this.goods.splice(temp.length);
-        }
-        else this.goods.splice(10);
-        while (k < temp.length && k < 10){
+        this.goods.splice(temp.length);
+        while (k < temp.length){
           this.goods.splice(k, 1, temp[k]);
           k ++;
         }
