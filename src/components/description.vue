@@ -175,7 +175,7 @@
         },
         watch: {
             itemDetail: function (new_obj) {
-                if (new_obj === undefined) {
+                if (new_obj === undefined || Object.keys(new_obj).length === 0) {
                     this.noBook = true;
                 } else {
                     this.noBook = false;
