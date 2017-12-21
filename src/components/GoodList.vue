@@ -40,21 +40,23 @@
                   </Col>
                   <Col span = 5>
                     <p class = "good_name">
-                      <Tag v-if = "good.isUsedbooks === 1" class = "Used">二手</Tag>
+                      <Tag v-if = "good.isUsedbooks === 1" class = "Used" color="yellow" type="border">二手</Tag>
                       {{ good.name }}
                     </p>
                   </Col>
                   <Col span = 7 offset = 1>
-                    <p class="price">￥{{good.price.toFixed(2)}}</p>
-                    <p class = "volume">销量：{{ good.sales_volume }}</p>
-                    <p class = "score">评分：{{ good.scores.good }}</p>
+                    <p class="price">￥{{good.price.toFixed(2)}}
+                        <span v-if="good.freight === 0" class="good-freight-tag">包邮</span>
+                    </p>
+                    <p v-if="good.freight > 0" class="keys">运费&nbsp;&nbsp;&nbsp;<span class="card-digit">￥{{ good.freight.toFixed(2) }}</span></p>
+                    <p class = "keys">月售&nbsp;&nbsp;&nbsp;<span class="card-digit">{{ good.sales_volume }}</span>&nbsp;件</p>
+                    <p class = "keys">评分&nbsp;&nbsp;&nbsp;<span class="card-digit">{{ good.scores.good }}</span></p>
                   </Col>
                   <Col span = 5>
-
+                    <img :src="seller_img[good.seller]" height="20px" width="58px">
                     <div v-for = "tag_id in good.tags" class = "tag">
                       <Tag>{{tags_inf[tag_id]}}</Tag>
                     </div>
-                    <img :src="seller_img[good.seller]" height="20px" width="65px">
                   </Col>
                 </Row>
               </Card>
@@ -83,7 +85,11 @@ export default {
     status : true,
     bb: book,
     tags_inf: ["正品保证","极速退款","七天退换","有赠品"],
-    seller_img: ["https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png","https://img14.360buyimg.com/da/jfs/t7366/203/1731206510/2597/d71c891f/59a056c1N5e4d6940.png","https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png","https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3455760616,3212888784&fm=27&gp=0.jpg","https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1301433934.jpg"],
+    seller_img: ["https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png",
+        "https://img14.360buyimg.com/da/jfs/t7366/203/1731206510/2597/d71c891f/59a056c1N5e4d6940.png",
+        "https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png",
+        "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3455760616,3212888784&fm=27&gp=0.jpg",
+        "https://login.dangdang.com/images/logo.png"],
     // use array to save goods, here i use some examples to show the web
     goods: [],
     total_goods: 0,
@@ -254,7 +260,7 @@ export default {
   }
 
   .Used{
-    color: #ff0000;
+    /*color: #ff0000;*/
   }
 
   .price{
@@ -264,6 +270,29 @@ export default {
 
   .radio-selector {
     padding-left: 10px;
+  }
+
+  .keys {
+      font-size: 10px;
+  }
+
+  .card-digit {
+      font-size: 12px;
+      font-weight: bold;
+  }
+
+  .good_name {
+      font-weight: bold;
+      color: #444
+  }
+
+  .good-freight-tag {
+      font-weight: normal;
+      font-size: 12px;
+      color: #006400;
+      border: solid 1px;
+      border-radius: 3px;
+      padding: 1px 2px;
   }
 
 /*#goodList {*/
