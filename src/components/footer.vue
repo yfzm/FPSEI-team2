@@ -1,69 +1,38 @@
 <template>
-    <div id="footer">
+    <div id="page-footer">
         <div class="nav-footer">
-            <Row>
-                <i-col span="5" offeset="2">
-                   <p class="icon1">
+            <Row type="flex" justify="center">
+                <i-col span="6">
+                    <p class="icon-title">
                       <Icon type="wand" size="20" color="#2d8cf0"></Icon>
                       相关推荐
-                   </p>
+                    </p>
+                    <p>Vue快速入门</p>
+                    <a href="javascript:void(0)" v-on:click="iview_show">iView - A UI Toolkit based on Vue.js</a>
+                    <p>HTML5+CSS教程</p>
+                    <p>jQuery教程</p>
+                    <p>JSON文件介绍</p>
                 </i-col>
-                <i-col span="5" offset="3">
-                   <p class="icon2">
+                <i-col span="6">
+                    <p class="icon-title">
                        <Icon type="social-github" size="20" color="#2d8cf0"></Icon>
                        GitHub
-                   </p>
+                    </p>
+                    <p><a href="javascript:void(0)" v-on:click="git1">FPSEI-group2-dev---master</a></p>
+                    <p><a href="javascript:void(0)" v-on:click="git2">FPSEI-group2-dev---dev</a></p>
+                    <p><a href="javascript:void(0)" v-on:click="git3">FPSEI-group2-dev---feature</a></p>
                 </i-col>
-                <i-col span="5" offset="4">
-                   <p class="icon3">
+                <i-col span="2">
+                    <p class="icon-title">
                        <Icon type="chatbubbles" size="20" color="#2d8cf0"></Icon>
                        社区
-                   </p>
-                </i-col>>
-            </Row>
-            <Row>
-                <i-col span="6" offset="0">
-                    <p>Vue快速入门</p>
-                </i-col>
-                    <i-col span="6" offset="2">
-                    <a href="javascript:void(0)" v-on:click="git1">FPSEI-group2-dev---master</a>
-                </i-col>
-                    <i-col span="5" offset="3">
+                    </p>
                     <p>使用教程</p>
-                </i-col>
-            </Row>
-            <Row>
-                <i-col span="7" offset="0">
-                    <a href="javascript:void(0)" v-on:click="iview_show">iView - A UI Toolkit based on Vue.js</a>
-                </i-col>
-                <i-col span="7" offset="1">
-                    <a href="javascript:void(0)" v-on:click="git2">FPSEI-group2-dev---dev</a>
-                </i-col>
-                <i-col span="5" offset="2">
                     <p>用户体验</p>
-                </i-col>
-            </Row>
-            <Row>
-                <i-col span="7" offset="0">
-                    <p>HTML5+CSS教程</p>
-                </i-col>
-                <i-col span="7" offset="1">
-                    <a href="javascript:void(0)" v-on:click="git3">FPSEI-group2-dev---feature</a>
-                </i-col>
-                <i-col span="5" offset="2">
                     <p>关于我们</p>
                 </i-col>
             </Row>
-            <Row>
-                <i-col span="5" offset="0">
-                    <p>jQuery教程</p>
-                </i-col>
-            </Row>
-            <Row>
-                <i-col>
-                    <p>JSON文件介绍</p>
-                </i-col>
-            </Row>
+
         </div>
     </div>
 </template>
@@ -99,23 +68,15 @@
 
 <style>
     .nav-footer{
-        padding-top:10px;
-        padding-left:180px;
+        padding:13px 0;
+        /*padding-left:180px;*/
     }
-    .icon1{
+    .icon-title{
+        padding-bottom: 10px;
         font-size:15px;
         font-weight:bold;
         color:#80848f;
     }
-    .icon2{
-        font-size:15px;
-        font-weight:bold;
-        color:#80848f;
-    }
-    .icon3{
-        font-size:15px;
-        font-weight:bold;
-        color:#80858f;
-    }
+
 
 </style>
