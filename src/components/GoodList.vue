@@ -3,8 +3,13 @@
     <div class="goods">
       <div class="search-result">
         <Row type="flex" align="middle" justify="space-between">
-          <Col span = 11>
-          <Button type="primary" size="small" @click="showUsedBooks" style="width: 150px;">显示/不显示二手书</Button>
+          <Col span = 18>
+          <!--<Button type="primary" size="small" @click="showUsedBooks" style="width: 150px;">显示/不显示二手书</Button>-->
+          <RadioGroup v-model="selector_option" @on-change="select_data" class="radio-selector">
+            <Radio label="0">全部</Radio>
+            <Radio label="1">不含二手书</Radio>
+            <Radio label="2">仅含二手书</Radio>
+          </RadioGroup>
           </Col>
           <Col span=5>
           <span class="record-text">共{{ total_goods }}条记录</span>
@@ -35,6 +40,7 @@
                   </Col>
                   <Col span = 5>
                     <p class = "good_name">
+                      <Tag v-if = "good.isUsedbooks === 1" class = "Used">二手</Tag>
                       {{ good.name }}
                     </p>
                   </Col>
@@ -44,7 +50,7 @@
                     <p class = "score">评分：{{ good.scores.good }}</p>
                   </Col>
                   <Col span = 5>
-                    <div v-if = "good.isUsedbooks === 1"><Tag class = "Used">二手</Tag></div>
+
                     <div v-for = "tag_id in good.tags" class = "tag">
                       <Tag>{{tags_inf[tag_id]}}</Tag>
                     </div>
@@ -83,7 +89,8 @@ export default {
     total_goods: 0,
     showing_goods: [],
     current_page: 1,
-    page_goods: 6
+    page_goods: 6,
+    selector_option: 0
   }),
   watch:{
     searchArr: function(new_Arr) {
@@ -146,6 +153,40 @@ export default {
       }
       this.$emit ('sendItem', this.goods[0]);
       return true;
+    },
+    select_data: function (cur) {
+      this.sort_arr();
+      if (cur === "1") {
+        var temp = [];
+        for (var i = 0; i < this.goods.length; i ++){
+          if (this.goods[i].isUsedbooks === 0){
+            temp.push(this.goods[i]);
+          }
+        }
+        var k = 0;
+        this.goods.splice(temp.length);
+        while (k < temp.length){
+          this.goods.splice(k, 1, temp[k]);
+          k ++;
+        }
+        this.$emit ('sendItem', this.goods[0]);
+      } else if (cur === "2") {
+        var temp = [];
+        for (var i = 0; i < this.goods.length; i ++){
+          if (this.goods[i].isUsedbooks === 1){
+            temp.push(this.goods[i]);
+          }
+        }
+        var k = 0;
+        this.goods.splice(temp.length);
+        while (k < temp.length){
+          this.goods.splice(k, 1, temp[k]);
+          k ++;
+        }
+        this.$emit ('sendItem', this.goods[0]);
+      }
+      this.total_goods = this.goods.length;
+      this.choose_page(1);
     },
     showUsedBooks: function() {
       if (this.status === false) {
@@ -220,6 +261,11 @@ export default {
     color: #ff6600;
     font-weight: bold;
   }
+
+  .radio-selector {
+    padding-left: 10px;
+  }
+
 /*#goodList {*/
   /*margin: 0 auto;*/
 /*}*/
