@@ -42,13 +42,13 @@
                 </p>
 
                 <p class="book-rate">商品评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Rate disabled show-text allow-half v-model="good_score">
-                    <span style="color: #f5a623; font-size: 17px">{{ good_score }}</span>
+                    <Rate disabled show-text allow-half v-model="itemDetail.scores.good">
+                    <span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.good }}</span>
                     </Rate>
                 </p>
                 <p class="book-credit">店铺评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <Rate disabled show-text allow-half v-model="credit_score">
-                    <span style="color: #f5a623; font-size: 17px">{{ credit_score }}</span>
+                    <Rate disabled show-text allow-half v-model="itemDetail.scores.credit">
+                    <span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.credit }}</span>
                     </Rate>
                 </p>
 
@@ -114,11 +114,15 @@
                 </TabPane>
 
                 <TabPane label="用户评价" name="comment">
-                    <div class="comment-list" v-for="item in itemDetail.comments">
+                    <div v-if="total_comments > 0" class="comment-list" v-for="item in showing_comments">
                         <Card>
                             <p slot="title">{{ item.user }}</p>
                             <p>{{ item.comment }}</p>
                         </Card>
+                    </div>
+                    <div v-else class="no_comment">暂无评论</div>
+                    <div class="page-switch">
+                        <Page :total="total_comments" :page-size="page_comments" show-total @on-change="choose_page"></Page>
                     </div>
                 </TabPane>
             </Tabs>
@@ -131,16 +135,35 @@
 <script>
     export default {
         props: ['itemDetail'],
+        mounted() {
+            this.choose_page(1);
+        },
         data: function () {
             return {
-                good_score: this.itemDetail.scores.good,
-                credit_score: this.itemDetail.scores.credit,
-                good_source: ["淘宝", "京东", "天猫", "亚马逊"]
+                good_source: ["淘宝", "京东", "天猫", "亚马逊"],
+                total_comments: this.itemDetail.comments.length,
+                showing_comments: [],
+                current_page: 1,
+                page_comments: 5
             }
         },
         methods: {
             openUrl: function () {
                 window.open(this.itemDetail.url);
+            },
+            choose_page: function (page) {
+                if (this.total_comments <= this.page_comments * page) {
+                    this.showing_comments = this.itemDetail.comments.slice((page - 1) * this.page_comments, this.total_comments);
+                } else {
+                    this.showing_comments = this.itemDetail.comments.slice((page - 1) * this.page_comments, page * this.page_comments);
+                }
+
+            }
+        },
+        watch: {
+            itemDetail: function (new_obj) {
+                this.total_comments = new_obj.comments.length;
+                this.choose_page(1);
             }
         }
     }
@@ -214,6 +237,11 @@
 
     .comment-list {
         padding-top: 15px;
+    }
+
+    .page-switch {
+        padding: 30px 0;
+        text-align: center;
     }
 
 </style>
