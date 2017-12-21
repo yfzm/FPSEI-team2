@@ -1,25 +1,19 @@
 <template>
   <div id="goodList">
     <div class="goods">
-      <Row>
-        <Col span = 8>
-        <Button type="primary" size="small" @click="showUsedBooks" style="width: 150px">显示/不显示二手书</Button>
-        </Col>
-      </Row>
-      <Row type="flex" justify="center" align="bottom" class="code-row-bg">
-        <Col span = 5 offset = 1>
-        <p>图片</p>
-        </Col>
-        <Col span = 6>
-        <p>名称</p>
-        </Col>
-        <Col span = 7>
-        <p>数据</p>
-        </Col>
-        <Col span = 5>
-        <p>其他</p>
-        </Col>
-      </Row>
+      <div class="search-result">
+        <Row type="flex" align="middle" justify="space-between">
+          <Col span = 11>
+          <Button type="primary" size="small" @click="showUsedBooks" style="width: 150px;">显示/不显示二手书</Button>
+          </Col>
+          <Col span=5>
+          <span class="record-text">共{{ total_goods }}条记录</span>
+          </Col>
+
+        </Row>
+      </div>
+
+
       <div v-if = "searchArr.length === 0">
         <Row>
           <Col span = 8 offset = 8>
@@ -199,6 +193,14 @@ export default {
   .good-page-switch {
     padding: 20px 0;
     text-align: center;
+  }
+
+  .search-result {
+    padding: 10px 0;
+  }
+
+  .record-text {
+    /*padding-top: 30px;*/
   }
 
   .code-row-bg{
