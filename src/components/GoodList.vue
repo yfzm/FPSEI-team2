@@ -13,14 +13,11 @@
         <Col span = 6>
         <p>名称</p>
         </Col>
-        <Col span = 4>
-        <p>价格</p>
-        </Col>
-        <Col span = 3>
-        <p>销量</p>
+        <Col span = 7>
+        <p>数据</p>
         </Col>
         <Col span = 5>
-        <p>评分</p>
+        <p>其他</p>
         </Col>
       </Row>
       <div v-if = "searchArr.length === 0">
@@ -47,15 +44,16 @@
                       {{ good.name }}
                     </p>
                   </Col>
-                  <Col span = 5>
+                  <Col span = 7>
                     <p class="price">￥{{good.price.toFixed(2)}}</p>
+                    <p class = "volume">销量：{{ good.sales_volume }}</p>
+                    <p class = "score">评分：{{ good.scores.good }}</p>
                   </Col>
-                  <Col span = 3>
-                    <p class = "volume">{{ good.sales_volume }}</p>
-                  </Col>
-                  <Col span = 4>
-                    <p class = "score">{{ good.scores.good }}</p>
-
+                  <Col span = 5>
+                    <div v-for = "tag_id in good.tags" class = "tag">
+                      <Tag>{{tags_inf[tag_id]}}</Tag>
+                    </div>
+                    <img :src="seller_img[good.seller]" height="20px" width="65px">
                   </Col>
                 </Row>
               </Card>
@@ -83,6 +81,8 @@ export default {
   data: () => ({
     status : true,
     bb: book,
+    tags_inf: ["正品保证","极速退款","七天退换","有赠品"],
+    seller_img: ["https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png","https://img14.360buyimg.com/da/jfs/t7366/203/1731206510/2597/d71c891f/59a056c1N5e4d6940.png","https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png","https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3455760616,3212888784&fm=27&gp=0.jpg","https://ss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/1301433934.jpg"],
     // use array to save goods, here i use some examples to show the web
     goods: [],
     total_goods: 0,
