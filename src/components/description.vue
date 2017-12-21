@@ -140,7 +140,7 @@
         },
         data: function () {
             return {
-                good_source: ["淘宝", "京东", "天猫", "亚马逊"],
+                good_source: ["淘宝", "京东", "天猫", "亚马逊","当当"],
                 total_comments: this.itemDetail.comments.length,
                 showing_comments: [],
                 current_page: 1,
