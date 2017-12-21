@@ -33,7 +33,7 @@
         name: 'app',
         data: function() {
             return {
-                search_result: [10000, 10001, 10002, 10003, 10004],
+                search_result: [10000, 10001, 10002, 10003, 10004, 10005],
 //                book_info: {}
                 book_info: {
                     "id": 10000,
