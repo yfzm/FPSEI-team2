@@ -33,17 +33,18 @@
                   <Col span = 6>
                     <img :src="good.picture" height="70px" width="70px">
                   </Col>
-                  <Col span = 6>
+                  <Col span = 5>
                     <p class = "good_name">
                       {{ good.name }}
                     </p>
                   </Col>
-                  <Col span = 7>
+                  <Col span = 7 offset = 1>
                     <p class="price">￥{{good.price.toFixed(2)}}</p>
                     <p class = "volume">销量：{{ good.sales_volume }}</p>
                     <p class = "score">评分：{{ good.scores.good }}</p>
                   </Col>
                   <Col span = 5>
+                    <div v-if = "good.isUsedbooks === 1"><Tag class = "Used">二手</Tag></div>
                     <div v-for = "tag_id in good.tags" class = "tag">
                       <Tag>{{tags_inf[tag_id]}}</Tag>
                     </div>
@@ -150,6 +151,8 @@ export default {
       if (this.status === false) {
         this.sort_arr();
         this.status = true;
+        this.total_goods = this.goods.length;
+        this.choose_page(1);
       }
       else{
         var temp = [];
@@ -166,6 +169,8 @@ export default {
         }
         this.$emit ('sendItem', this.goods[0]);
         this.status = false;
+        this.total_goods = this.goods.length;
+        this.choose_page(1);
       }
       return true;
     },
@@ -205,6 +210,15 @@ export default {
 
   .code-row-bg{
     padding-top : 10px;
+  }
+
+  .Used{
+    color: #ff0000;
+  }
+
+  .price{
+    color: #ff6600;
+    font-weight: bold;
   }
 /*#goodList {*/
   /*margin: 0 auto;*/
