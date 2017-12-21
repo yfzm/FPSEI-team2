@@ -6,7 +6,10 @@
 					<img v-bind:src="itemDetail.picture" v-bind:alt="itemDetail.name" width="300" height="300">
 				</Col>
 				<Col span="13" offset="1">
-					<p class="book-name">{{ itemDetail.name }}</p>
+                    <p class="book-name">
+                        <Tag v-if="itemDetail.isUsedbooks" color="yellow" class="static-tag">二手</Tag>
+                        {{ itemDetail.name }}
+                    </p>
 					<p class="book-author">{{ itemDetail.author }} 著</p>
 
 					<p class="book-price">
@@ -15,7 +18,10 @@
 								<p style="font-size: 15px">价格</p>
 							</Col>
 							<Col span="19">
-								<p class="price-digit">￥{{ itemDetail.price.toFixed(2) }}</p>
+								<p class="price-digit">￥{{ itemDetail.price.toFixed(2) }}
+                                    <Tag v-if="itemDetail.freight === 0" color="green" class="static-tag">包邮</Tag>
+                                    <span v-else class="book-freight">(另需运费：<span class="freight-digit">￥{{ itemDetail.freight.toFixed(2) }}</span>)</span>
+                                </p>
 							</Col>
 						</Row>
 					</p>
@@ -88,7 +94,8 @@
 								<p>页数</p>
 							</Col>
 							<Col span="5">
-								<p>{{ itemDetail.detail.pages }}</p>
+                                <p v-if="itemDetail.detail.pages <= 0">未知</p>
+								<p v-else>{{ itemDetail.detail.pages }}</p>
 							</Col>
 							<Col span="5" offset="4">
 								<p>语言</p>
@@ -211,6 +218,11 @@
         letter-spacing: 1px;
     }
 
+    .freight-digit {
+        font: bold 12px "verdana";
+        color: orangered;
+    }
+
     .book-tag {
         padding-top: 8px;
         font-size: 15px
@@ -253,6 +265,15 @@
     .page-switch {
         padding: 30px 0;
         text-align: center;
+    }
+
+    .static-tag {
+        cursor: auto;
+    }
+
+    .book-freight {
+        font-size: 10px;
+        color: #aaaaaa
     }
 
 </style>
