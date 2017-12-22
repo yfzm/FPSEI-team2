@@ -1,7 +1,7 @@
 <template>
   <div id="search">
     <div class="nav-search">
-      <Input size="large" v-model="my_input" placeholder="请输入关键字" style="width: 500px" @keyup.13="showNextpage"></Input>
+        <i-input size="large" v-model="my_input" placeholder="请输入关键字" style="width: 500px" @on-enter="showNextpage"></i-input>
       <Button type="primary" icon="ios-search" size="large" @click="showNextpage" style="width: 120px">搜索</Button>
     </div>
     <!--<input type="text" v-model="my_input" id="input_type">-->
