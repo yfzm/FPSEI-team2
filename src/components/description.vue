@@ -130,7 +130,7 @@
 						</div>
 					</TabPane>
 
-					<TabPane label="用户评价" name="comment">
+					<TabPane :label="'用户评价(' + itemDetail.comments.length + ')'" name="comment">
 						<div v-if="total_comments > 0" class="comment-list" v-for="item in showing_comments">
 							<Card>
 								<p slot="title">{{ item.user }}</p>
