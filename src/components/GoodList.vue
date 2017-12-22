@@ -40,7 +40,11 @@
                   </Col>
                   <Col span = 5>
                     <p class = "good_name">
-                      <Tag v-if = "good.isUsedbooks === 1" class = "Used" color="yellow" type="border">二手</Tag>
+                      <img :src="seller_img[good.seller]" alt="" height="20px" width="20px">
+                      <!--<Tag v-if = "good.isUsedbooks === 1" class = "Used" color="yellow" type="border">二手</Tag>-->
+                      <span class="good-used-tag-padding">
+                        <span v-if="good.isUsedbooks === 1" class="good-used-tag">二手</span>
+                      </span>
                       {{ good.name }}
                     </p>
                   </Col>
@@ -50,10 +54,10 @@
                     </p>
                     <p v-if="good.freight > 0" class="keys">运费&nbsp;&nbsp;&nbsp;<span class="card-digit">￥{{ good.freight.toFixed(2) }}</span></p>
                     <p class = "keys">月售&nbsp;&nbsp;&nbsp;<span class="card-digit">{{ good.sales_volume }}</span>&nbsp;件</p>
-                    <p class = "keys">评分&nbsp;&nbsp;&nbsp;<span class="card-digit">{{ good.scores.good }}</span></p>
+                    <p class = "keys">评分&nbsp;&nbsp;&nbsp;<span class="card-digit">{{ good.scores.good.toFixed(1) }}</span></p>
                   </Col>
                   <Col span = 5>
-                    <img :src="seller_img[good.seller]" height="20px" width="58px">
+                    <!--<img :src="seller_img[good.seller]" height="20px" width="58px">-->
                     <div v-for = "tag_id in good.tags" class = "tag">
                       <Tag>{{tags_inf[tag_id]}}</Tag>
                     </div>
@@ -85,12 +89,19 @@ export default {
     status : true,
     bb: book,
     tags_inf: ["正品保证","极速退款","七天退换","有赠品"],
-    seller_img: ["https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png",
-        "https://img14.360buyimg.com/da/jfs/t7366/203/1731206510/2597/d71c891f/59a056c1N5e4d6940.png",
-        "https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png",
-        "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3455760616,3212888784&fm=27&gp=0.jpg",
-        "https://login.dangdang.com/images/logo.png"],
-    // use array to save goods, here i use some examples to show the web
+//    seller_img: ["https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png",
+//      "https://img14.360buyimg.com/da/jfs/t7366/203/1731206510/2597/d71c891f/59a056c1N5e4d6940.png",
+//      "https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png",
+//      "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3455760616,3212888784&fm=27&gp=0.jpg",
+//      "https://login.dangdang.com/images/logo.png"],
+    seller_img: [
+      "/src/assets/taobao.png",
+      "/src/assets/jingdong.png",
+      "/src/assets/tianmao.png",
+      "/src/assets/amazon.png",
+      "/src/assets/dangdang.png"
+    ],
+
     goods: [],
     total_goods: 0,
     showing_goods: [],
@@ -293,6 +304,18 @@ export default {
       border: solid 1px;
       border-radius: 3px;
       padding: 1px 2px;
+  }
+
+  .good-used-tag {
+      font-weight: normal;
+      font-size: 12px;
+      color: #ff4500;
+      border: solid 1px;
+      border-radius: 3px;
+      padding: 1px 2px;
+  }
+
+  .good-used-tag-padding {
   }
 
 /*#goodList {*/
