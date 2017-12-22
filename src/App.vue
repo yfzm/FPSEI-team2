@@ -20,6 +20,9 @@
             </div>
         </div>
 
+        <div class="bottom-pic">
+            <Footer id="bottom-show"></Footer>
+        </div>
 
     </div>
 </template>
@@ -28,6 +31,7 @@
     import Search from './components/Search.vue';
     import GoodList from './components/GoodList.vue';
     import Description from './components/description.vue';
+    import Footer from './components/footer.vue';
 
     export default {
         name: 'app',
@@ -79,7 +83,8 @@
         components: {
             Search,
             GoodList,
-            Description
+            Description,
+            Footer
         }
     }
 </script>
@@ -91,7 +96,7 @@
 
     .page-padding {
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 
     .page_body {
@@ -127,6 +132,15 @@
 
     }
 
+    .bottom-pic{
+        padding-bottom:0;
+    }
+
+    #bottom-show{
+        width:100%;
+        height:150px;
+        background:#ffffff;
+    }
     #comment_list {
 
     }

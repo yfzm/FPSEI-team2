@@ -23,12 +23,22 @@ export default {
   },
   methods: {
      showNextpage: function(){
+       if(this.my_input === "") {
+           this.$Message.warning('搜索内容不能为空！');
+           return;
+       }
        this.search_result=[];
        this.input_result=this.my_input;
        for(let data of this.right_book.Books){
-         if(data.name.indexOf(this.input_result) >= 0){
-           this.search_result.push(data.id);
-         }
+           let book_name=data.name;
+           book_name=book_name.trim().toLowerCase();
+           let input_name=this.input_result;
+           input_name=input_name.trim().toLowerCase();
+
+           if (book_name.indexOf(input_name) >= 0) {
+               this.search_result.push(data.id);
+           }
+
        }
        this.$emit("sendResult",this.search_result);
      }
