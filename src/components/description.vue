@@ -50,12 +50,12 @@
 
 					<p class="book-rate">商品评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<Rate disabled show-text allow-half v-model="itemDetail.scores.good">
-						<span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.good }}</span>
+						<span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.good.toFixed(1) }}</span>
 						</Rate>
 					</p>
 					<p class="book-credit">店铺评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<Rate disabled show-text allow-half v-model="itemDetail.scores.credit">
-						<span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.credit }}</span>
+						<span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.credit.toFixed(1) }}</span>
 						</Rate>
 					</p>
                     <div class="book-tags">
