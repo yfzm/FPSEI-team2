@@ -62,11 +62,18 @@
 					<Row>
 						<Col span="15">
 							<div class="book-btn">
-								<Button type="primary" size="large" icon="ios-cart" @click="openUrl" long>立即购买</Button>
+                <Row>
+								  <Col span="16"><Button type="primary" size="large" icon="ios-cart" @click="openUrl" long>立即购买</Button></Col>
+                  <Col span="6">  <img :src="seller_img[itemDetail.seller]" height="30px" width="70px"></Col>
+                </Row>
+                <Row type="flex" justify="start" class="code-row-bg">
+                <div v-for = "tag_id in itemDetail.tags" class = "tag">
+                  <Tag><Col>{{tags_inf[tag_id]}}</Col></Tag>
+                </div>
+                </Row>
 							</div>
 						</Col>
 					</Row>
-
 
 				</Col>
 			</Row>
@@ -94,7 +101,7 @@
 								<p>页数</p>
 							</Col>
 							<Col span="5">
-                                <p v-if="itemDetail.detail.pages <= 0">未知</p>
+                <p v-if="itemDetail.detail.pages <= 0">未知</p>
 								<p v-else>{{ itemDetail.detail.pages }}</p>
 							</Col>
 							<Col span="5" offset="4">
@@ -115,7 +122,7 @@
 						<div class="book-content">
 							<Collapse>
 								<Panel name="1">目录
-									<p slot="content">{{ itemDetail.information.content }}</p>
+                  <p slot="content"><pre>{{ itemDetail.information.content }}  </pre></p>
 								</Panel>
 							</Collapse>
 						</div>
@@ -156,7 +163,13 @@
                 total_comments: this.itemDetail.comments.length,
                 showing_comments: [],
                 current_page: 1,
-                page_comments: 5
+                page_comments: 5,
+                tags_inf: ["正品保证","极速退款","七天退换","有赠品"],
+                seller_img: ["https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png",
+                    "https://img14.360buyimg.com/da/jfs/t7366/203/1731206510/2597/d71c891f/59a056c1N5e4d6940.png",
+                    "https://img.alicdn.com/tfs/TB1MaLKRXXXXXaWXFXXXXXXXXXX-480-260.png",
+                    "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3455760616,3212888784&fm=27&gp=0.jpg",
+                    "https://login.dangdang.com/images/logo.png"],
             }
         },
         methods: {
@@ -277,4 +290,3 @@
     }
 
 </style>
-
