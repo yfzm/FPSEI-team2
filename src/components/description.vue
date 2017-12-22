@@ -37,16 +37,16 @@
 						</Row>
 					</p>
 
-					<p class="book-tag">
-						<Row>
-							<Col span="5">
-								<p style="font-size: 15px">来源</p>
-							</Col>
-							<Col span="19">
-								<p class="price-seller">{{ good_source[itemDetail.seller] }}</p>
-							</Col>
-						</Row>
-					</p>
+					<!--<p class="book-tag">-->
+						<!--<Row>-->
+							<!--<Col span="5">-->
+								<!--<p style="font-size: 15px">来源</p>-->
+							<!--</Col>-->
+							<!--<Col span="19">-->
+								<!--<p class="price-seller">{{ good_source[itemDetail.seller] }}</p>-->
+							<!--</Col>-->
+						<!--</Row>-->
+					<!--</p>-->
 
 					<p class="book-rate">商品评分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<Rate disabled show-text allow-half v-model="itemDetail.scores.good">
@@ -58,22 +58,24 @@
 						<span style="color: #f5a623; font-size: 17px">{{ itemDetail.scores.credit }}</span>
 						</Rate>
 					</p>
+                    <div class="book-tags">
+                        <span v-for = "tag_id in itemDetail.tags" class = "tag">
+                            <Tag>{{tags_inf[tag_id]}}</Tag>
+                        </span>
+                    </div>
+                    <div class="book-purchase">
+                        <Row type="flex" align="middle">
+                            <Col span="5">
+                                <img :src="seller_img[itemDetail.seller]" height="30px" width="70px">
+                            </Col>
+                            <Col span="10">
+                                <div class="book-btn">
+                                    <Button type="primary" size="large" icon="ios-cart" @click="openUrl" long>立即购买</Button>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
 
-					<Row>
-						<Col span="15">
-							<div class="book-btn">
-                <Row>
-								  <Col span="16"><Button type="primary" size="large" icon="ios-cart" @click="openUrl" long>立即购买</Button></Col>
-                  <Col span="6">  <img :src="seller_img[itemDetail.seller]" height="30px" width="70px"></Col>
-                </Row>
-                <Row type="flex" justify="start" class="code-row-bg">
-                <div v-for = "tag_id in itemDetail.tags" class = "tag">
-                  <Tag><Col>{{tags_inf[tag_id]}}</Col></Tag>
-                </div>
-                </Row>
-							</div>
-						</Col>
-					</Row>
 
 				</Col>
 			</Row>
@@ -252,7 +254,7 @@
     }
 
     .book-btn {
-        padding-top: 17px;
+        /*padding-top: 17px;*/
     }
 
     .book-tab {
@@ -287,6 +289,14 @@
     .book-freight {
         font-size: 10px;
         color: #aaaaaa
+    }
+
+    .book-tags {
+        padding: 10px 0;
+    }
+
+    .book-purchase {
+        padding: 5px 0;
     }
 
 </style>
