@@ -1,5 +1,8 @@
 <template>
     <div id="app">
+        <BackTop v-if="!isMobile" :height="100" :bottom="75">
+            <div class="top">返回顶端</div>
+        </BackTop>
         <div class="top-pin">
             <Search id="search_box" v-on:sendResult="getResult"></Search>
         </div>
@@ -35,6 +38,18 @@
 
     export default {
         name: 'app',
+
+        mounted() {
+            let u = navigator.userAgent;
+            let app = navigator.appVersion;
+            if (!!u.match(/AppleWebKit.*Mobile.*/) ||
+                !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) ||
+                u.indexOf('Android') > -1 || u.indexOf('Linux') > -1 ||
+                u.indexOf('iPhone') > -1) {
+                this.isMobile = true;
+            }
+        },
+
         data: function() {
             return {
                 search_result: [10000, 10001, 10002, 10003, 10004, 10005],
@@ -69,7 +84,8 @@
                         "comment": ""
                     }
                     ]
-                }
+                },
+                isMobile: false
             }
         },
         methods: {
@@ -102,7 +118,7 @@
     .page_body {
         margin: 0 auto;
         max-width: 1350px;
-        min-width: 1100px;
+        min-width: 1200px;
         /*border-radius: 10px;*/
         /*padding: 40px 30px 30px 30px;*/
         /*background-color: #ffffff*/
@@ -144,4 +160,13 @@
     #comment_list {
 
     }
+
+    .top{
+        padding: 10px;
+        background: rgba(0, 153, 229, .7);
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+    }
+
 </style>

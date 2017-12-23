@@ -117,7 +117,7 @@ export default {
     total_goods: 0,
     showing_goods: [],
     page_goods: 6,
-    selector_option: 0
+    selector_option: '0'
   }),
   watch:{
     searchArr: function(new_Arr) {
