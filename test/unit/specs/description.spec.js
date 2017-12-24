@@ -13,6 +13,21 @@ describe('description.vue',()=>{
     it('data() is a function',()=>{
         expect(typeof description.data).to.be.equal('function')
     });
+    it('openUrl is a function',()=>{
+        const Constructor= Vue.extend(description);
+        const vm=new Constructor().$mount();
+        expect(typeof vm.openUrl).to.be.equal('function');
+    });
+    it('choose_page is a function',()=>{
+        const Constructor= Vue.extend(description);
+        const vm=new Constructor().$mount();
+        expect(typeof vm.choose_page).to.be.equal('function');
+    });
+    it('openUrl is a function',()=>{
+        const Constructor= Vue.extend(description);
+        const vm=new Constructor().$mount();
+        expect(typeof vm.openUrl).to.be.equal('function');
+    });
     it('total_comments changed when finding a new book',()=>{
         let desvm=getRenderedVm(description,
             {
@@ -53,6 +68,9 @@ describe('description.vue',()=>{
                     ]
                 }
     });
-        expect(desvm.itemDetail.comments.length).to.be.equal(2)
-    })
+        expect(desvm.itemDetail.comments.length).to.be.equal(2);
+    });
+
+    //检查没有对应书籍时
+
 });
