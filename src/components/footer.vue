@@ -2,7 +2,7 @@
     <div id="page-footer">
         <div class="nav-footer">
             <Row type="flex" justify="center">
-                <i-col span="6">
+                <i-col span="8">
                     <p class="icon-title">
                       <Icon type="wand" size="20" color="#2d8cf0"></Icon>
                       相关推荐
@@ -13,7 +13,7 @@
                     <p>jQuery教程</p>
                     <p>JSON文件介绍</p>
                 </i-col>
-                <i-col span="6">
+                <i-col span="8">
                     <p class="icon-title">
                        <Icon type="social-github" size="20" color="#2d8cf0"></Icon>
                        GitHub

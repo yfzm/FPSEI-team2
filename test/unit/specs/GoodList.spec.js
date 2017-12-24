@@ -52,12 +52,14 @@ describe('传入空数据测试', () => {
 
         // 切换筛选器到“不显示二手书”
         goodList.selector_option = '1';
+        goodList.select_data('1');
         Vue.nextTick(() => {
             expect(goodList.$el.querySelector('#no-result-info p').innerText).to.be.equal('无搜索结果');
             expect(goodList.$el.querySelector('.record-text').innerText).to.be.equal('共0条记录');
 
             // 切换筛选器到“仅显示二手书”
             goodList.selector_option = '2';
+            goodList.select_data('2');
             Vue.nextTick(() => {
                 expect(goodList.$el.querySelector('#no-result-info p').innerText).to.be.equal('无符合条件的二手书');
                 expect(goodList.$el.querySelector('.record-text').innerText).to.be.equal('共0条记录');
@@ -84,24 +86,30 @@ describe('传入一项数据测试', () => {
         expect(goodList.showing_goods.length).to.be.equal(1);
     });
 
-    it('DOM显示正确性测试', () => {
+    it('DOM显示正确性测试', done => {
         expect(goodList.$el.querySelector('#no-result-info p')).to.be.equal(null);
         expect(goodList.$el.querySelector('.record-text').innerText).to.be.equal('共1条记录');
 
         // 切换筛选器到“不显示二手书”
         goodList.selector_option = '1';
+        goodList.select_data('1');
         Vue.nextTick(() => {
             expect(goodList.$el.querySelector('#no-result-info p')).to.be.equal(null);
             expect(goodList.$el.querySelector('.record-text').innerText).to.be.equal('共1条记录');
+
+            // 切换筛选器到“仅显示二手书”
+            goodList.selector_option = '2';
+            goodList.select_data('2');
+            Vue.nextTick(() => {
+                expect(goodList.goods.length).to.be.equal(0);
+                expect(goodList.$el.querySelector('#no-result-info p').innerText).to.be.equal('无符合条件的二手书');
+                expect(goodList.$el.querySelector('.record-text').innerText).to.be.equal('共0条记录');
+                done();
+            });
         });
 
-        // 切换筛选器到“仅显示二手书”
-        goodList.selector_option = '2';
-        Vue.nextTick(() => {
-            expect(goodList.goods.length).to.be.equal(0);
-            expect(goodList.$el.querySelector('#no-result-info p').innerText).to.be.equal('无符合条件的二手书');
-            expect(goodList.$el.querySelector('.record-text').innerText).to.be.equal('共0条记录');
-        });
+
+
     })
 });
 

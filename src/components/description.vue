@@ -83,7 +83,7 @@
 			<div class="book-tab">
 				<Tabs value="detail">
 					<TabPane label="详细信息" name="detail">
-						<Row class="set-padding-top20">
+						<Row class="set-padding-top20 set-padding-left10">
 							<Col span="5">
 								<p>出版社</p>
 							</Col>
@@ -98,7 +98,7 @@
 							</Col>
 						</Row>
 
-						<Row class="set-padding-top20">
+						<Row class="set-padding-top20 set-padding-left10">
 							<Col span="5">
 								<p>页数</p>
 							</Col>
@@ -263,6 +263,10 @@
 
     .set-padding-top20 {
         padding-top: 20px;
+    }
+
+    .set-padding-left10 {
+        padding-left: 10px;
     }
 
     .book-description {
