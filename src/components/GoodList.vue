@@ -18,18 +18,14 @@
       </div>
 
       <div v-if = "showing_goods.length === 0">
-        <Row>
-          <i-col span = 24>
-            <Card style="text-align: center;">
-              <p v-if="selector_option === '2'">无符合条件的二手书</p>
-              <p v-else>无搜索结果</p>
-            </Card>
-          </i-col>
-        </Row>
+        <Card style="text-align: center;" id="no-result-info">
+          <p v-if="selector_option === '2'">无符合条件的二手书</p>
+          <p v-else>无搜索结果</p>
+        </Card>
       </div>
 
       <div v-else>
-        <div v-for="good, index in showing_goods" class="good">
+        <div v-for="good in showing_goods" class="good">
           <div class="item-padding">
             <div class="good-item" @click = "send_Item(good)">
               <Card>
@@ -38,9 +34,9 @@
                     <img :src="good.picture" height="70px" width="70px">
                   </i-col>
                   <i-col span="5">
-                    <p class = "good_name">
-                      <span class="good-used-tag-padding">
-                        <span v-if="good.isUsedbooks === 1" class="good-used-tag">二手</span>
+                    <p class = "good-name">
+                      <span v-if="good.isUsedbooks === 1" class="good-used-tag-padding">
+                        <span class="good-used-tag">二手</span>
                       </span>
                       {{ good.name }}
                     </p>
@@ -49,9 +45,19 @@
                     <p class="price">￥{{good.price.toFixed(2)}}
                         <span v-if="good.freight === 0" class="good-freight-tag">包邮</span>
                     </p>
-                    <p v-if="good.freight > 0" class="keys">运费&nbsp;&nbsp;&nbsp;<span class="card-digit">￥{{ good.freight.toFixed(2) }}</span></p>
-                    <p class = "keys">月售&nbsp;&nbsp;&nbsp;<span class="card-digit">{{ good.sales_volume }}</span>&nbsp;件</p>
-                    <p class = "keys">评分&nbsp;&nbsp;&nbsp;<span class="card-digit">{{ good.scores.good.toFixed(1) }}</span></p>
+                    <p v-if="good.freight > 0" class="keys">
+                        <span>运费&nbsp;&nbsp;</span>
+                        <span class="card-digit freight">￥{{ good.freight.toFixed(2) }}</span>
+                    </p>
+                    <p class = "keys">
+                        <span>月售&nbsp;&nbsp;</span>
+                        <span class="card-digit volume">{{ good.sales_volume }}</span>
+                        <span>&nbsp;件</span>
+                    </p>
+                    <p class = "keys">
+                        <span>评分&nbsp;&nbsp;</span>
+                        <span class="card-digit score">{{ good.scores.good.toFixed(1) }}</span>
+                    </p>
                   </i-col>
                   <i-col span="5">
                     <div class="good-seller">
@@ -111,7 +117,7 @@ export default {
     total_goods: 0,
     showing_goods: [],
     page_goods: 6,
-    selector_option: 0
+    selector_option: '0'
   }),
   watch:{
     searchArr: function(new_Arr) {
@@ -238,7 +244,7 @@ export default {
       font-weight: bold;
   }
 
-  .good_name {
+  .good-name {
       font-weight: bold;
       color: #444
   }
@@ -272,85 +278,14 @@ export default {
     vertical-align: middle;
   }
 
+  .set-vertical-align {
+    vertical-align: middle;
+  }
+
   .good-seller span {
     font-size: 12px;
     color: #999999;
     padding-left: 3px;
   }
 
-/*#goodList {*/
-  /*margin: 0 auto;*/
-/*}*/
-
-/*.goods li {*/
-  /*list-style: none;*/
-/*}*/
-
-/*.good {*/
-  /*width: 100%;*/
-  /*height: 130px;*/
-  /*border-bottom: 1px solid #e7e7e7;*/
-/*}*/
-
-/*.good li{*/
-  /*float: left;*/
-  /*height: 100%;*/
-/*}*/
-/*.good .good_inf{*/
-    /*width: 190px;*/
-/*}*/
-/*.good .good_inf .good_image{*/
-    /*width: 80px;*/
-    /*height: 80px;*/
-    /*margin-top: 20px;*/
-    /*float: left;*/
-/*}*/
-
-/*.good .good_inf .good_image img{*/
-  /*width: 100%;*/
-  /*vertical-align: top;*/
-/*}*/
-
-/*.good .good_inf .good_name{*/
-  /*margin: 20px 0 0 10px;*/
-  /*line-height: 18px;*/
-  /*width: 100px;*/
-  /*float: left;*/
-/*}*/
-
-/*.good .good_price{*/
-  /*width: 65px;*/
-/*}*/
-
-/*.good .good_price price{*/
-  /*margin-top: 20px;*/
-  /*line-height: 18px;*/
-  /*font-family: Verdana,Tahoma,arial;*/
-  /*color: #3c3c3c;*/
-  /*font-weight: bold;*/
-/*}*/
-
-/*.good .good_s_volume{*/
-  /*width: 60px;*/
-
-/*}*/
-/*.good .good_s_volume volume{*/
-  /*line-height: 18px;*/
-  /*margin-top: 20px;*/
-  /*font-family: Verdana,Tahoma,arial;*/
-  /*color: #900;*/
-  /*font-weight: bold;*/
-/*}*/
-
-/*.good .good_score{*/
-  /*width: 60px;*/
-/*}*/
-
-/*.good .good_score .score{*/
-  /*line-height: 18px;*/
-  /*margin-top: 20px;*/
-  /*font-family: Verdana,Tahoma,arial;*/
-  /*color: #900;*/
-  /*font-weight: bold;*/
-/*}*/
 </style>
